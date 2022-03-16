@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tables</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    
+    <table border="2" cellpadding="5" cellspacing="5">
+        <thead>
+            <tr>
+                <th></th>
+                <th scope="col">Monday</th>
+                <th scope="col">Tuesday</th>
+                <th scope="col">Webnesday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Morning</th>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <th scope="row" rowspan="2">Afternoon</th>
+                <td>x</td>
+                <td>v</td>
+                <td colspan="2">v</td>
+            </tr>
+            <tr>
+                <td>v</td>
+                <td>v</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4" style="text-align: center;">End of table</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
