@@ -1,0 +1,58 @@
+body{
+  font-size: 90%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: beige;
+}
+li{
+  list-style-type: circle;
+}
+table, th, td{
+  padding: 7px;
+  border: 1px solid red;
+  border-spacing: 3px;
+  letter-spacing: 0.12em;
+}
+table{
+  border-radius: 10px;
+}
+td, tfoot{
+  text-align: center;
+}
+fieldset
+{
+  width: 40%;
+  margin: 10px;
+  padding: 15px;
+}
+legend{
+  font-size: larger;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+label{
+  display: inline-block;
+  width: 130px;
+  text-align: right;
+}
+input{
+  margin: 10px;
+  width: 20vw;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+input:hover{
+  cursor: pointer;
+  border: 1px solid red;
+}
+input[type="submit"]{
+  width: 200px;
+  font-weight: 500;
+  display: block;
+  margin: auto;
+}
+input[type="submit"]:hover{
+  background-color: black;
+  color: white;
+  border: none;
+}

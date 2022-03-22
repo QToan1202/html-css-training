@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Lists, Tables and Forms</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='CSS/c14.css'>
+</head>
+<body>
+    <h1>My Task Today:</h1>
+    <ul>
+      <li>Learning English TOEIC</li>
+      <li>Ask teacher to join group</li>
+      <li>Class meeting</li>
+      <li>Practicing</li>
+      <li>Report</li>
+      <li>Sleep</li>
+      <li>Project preparation</li>
+    </ul>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">List</th>
+          <th scope="col">Table</th>
+          <th scope="col">Form</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Note</th>
+          <td>x</td>
+          <td>x</td>
+          <td>x</td>
+        </tr>
+        <tr>
+          <th scope="row">Practice</th>
+          <td>x</td>
+          <td></td>
+          <td>x</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">Task date 22/03/2022</td>
+        </tr>
+      </tfoot>
+    </table>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Register</legend>
+        <label for="email">User: </label>
+        <input type="email" name="email" id="email" /> <br />
+        <label for="pass">Password: </label>
+        <input type="password" name="pass" id="pass" /> <br />
+        <label for="pass_2">Confirm Password: </label>
+        <input type="password" name="pass_2" id="pass_2" />
+        <input type="submit" value="OK!">
+      </fieldset>
+    </form>
+</body>
+</html>
