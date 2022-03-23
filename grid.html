@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Grid layout</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style type="text/css">
+    .grid-container{
+      margin: 10px;
+      background-color: aqua;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      gap: 5px;
+    }
+    .grid-item{
+      margin: 5px;
+      padding: 10px;
+      border: 1px dashed chartreuse;
+      text-align: center;
+      color: red;
+      font-size: 120%;
+    }
+    .item9{
+      grid-area: 3/1/4/5;
+    }
+  </style>
+</head>
+<body>
+  <h1>Grid layout</h1>
+  <p>Practicing with grid</p>
+  <div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+    <div class="grid-item">7</div>
+    <div class="grid-item">8</div>
+    <div class="grid-item item9">9</div>
+  </div>
+</body>
+</html>
