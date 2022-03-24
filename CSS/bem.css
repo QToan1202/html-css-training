@@ -18,6 +18,9 @@ body{
 .card__list{
   list-style-type: none;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 0px;
   padding: 0px;
 }
