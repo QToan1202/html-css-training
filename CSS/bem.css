@@ -1,0 +1,49 @@
+body{
+  font-size: 150%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.card{
+  width: 50vw;
+  border: 1px solid black;
+}
+.card__img{
+  display: block;
+  height: 200px;
+  background-color: aquamarine;
+}
+.card__content{
+  padding: 10px;
+  background-color: azure;
+}
+.card__list{
+  list-style-type: none;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+.card__item{
+  margin: 5px;
+  padding: 10px;
+  background-color: gainsboro;
+}
+.card__item--active{
+  font-weight: bold;
+  border: 1px solid black;
+}
+.card__desc{
+  text-align: justify;
+}
+.card__link{
+  background-color: aqua;
+  color: white;
+  text-decoration: none;
+  padding: 5px 5px;
+  display: inline-block;
+  border-radius: 10px;
+  text-align: center;
+  width: 20vw;
+}
+.card__link:hover{
+  background-color: rgb(25, 226, 226);
+  font-weight: 700;
+}
