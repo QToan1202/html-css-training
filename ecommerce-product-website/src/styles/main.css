@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body { 
+  font-family: 'Montserrat', sans-serif; 
+  color: rgba(255, 255, 255, 1);
+  height: 200vh;
+}
+
+header {
+  width: 100vw;
+  height: 616px;
+  background-color: rgba(43, 40, 53, 1);
+}
+
+
+
+
+
+/*------------------------------------*\
+  #NAV
+\*------------------------------------*/
+
+nav {
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  height: 78px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(25, 23, 32, 0.4676);
+}
+
+.nav__logo {
+  margin: auto auto auto 100px;
+  align-items: flex-start;
+}
+
+.nav__list { list-style-type: none; }
+
+.nav__item {
+  display: inline-block;
+  margin-left: 100px;
+  size: 15px;
+  font-weight: 500;
+  line-height: 18.29px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav__item--group { margin-left: 50px; }
+
+.nav__item--margin-right { margin-right: 80px; }
+
+
+
+
+
+/*------------------------------------*\
+  #BLOCK
+\*------------------------------------*/
+
+.block { 
+  display: flex; 
+  position: relative;
+}
+
+.block__col { 
+  width: 508px;
+  position: absolute;
+  top: 199px;
+  left: 797px;
+}
+
+.block__title {
+  font-size: 16px;
+  line-height: 19.5px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.block__desc {
+  margin: 13px 0px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 43px;
+}
+
+.block__element {
+  display: flex;
+  margin: 27px 0px 13px 0px;
+}
+
+.block__price {
+  margin-right: 34px;
+  position: relative;
+  color: rgba(242, 242, 242, 1);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48.76px;
+}
+
+.block__btn {
+  color: rgba(0, 0, 0, 1);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 11px 48px 13px 48px;
+  border-radius: 100px;
+  border: none;
+  background-color: rgba(255, 199, 0, 1);
+}
+
+.block__promo {
+  color: rgba(255, 199, 0, 1);
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19.62px;
+}
