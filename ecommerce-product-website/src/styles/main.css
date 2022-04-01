@@ -2,14 +2,13 @@
 
 body { 
   font-family: 'Montserrat', sans-serif; 
-  color: rgba(255, 255, 255, 1);
-  height: 200vh;
 }
 
 header {
   width: 100vw;
   height: 616px;
   background-color: rgba(43, 40, 53, 1);
+  position: relative;
 }
 
 
@@ -40,6 +39,7 @@ nav {
 
 .nav__item {
   display: inline-block;
+  color: rgba(255, 255, 255, 1);
   margin-left: 100px;
   size: 15px;
   font-weight: 500;
@@ -60,63 +60,144 @@ nav {
   #BLOCK
 \*------------------------------------*/
 
-.block { 
-  display: flex; 
-  position: relative;
-}
+.block { display: flex; }
 
 .block__col { 
-  width: 508px;
   position: absolute;
+  width: 508px;
   top: 199px;
-  left: 797px;
+  left: 55.35%;
 }
 
-.block__title {
-  font-size: 16px;
-  line-height: 19.5px;
-  letter-spacing: 1px;
-  font-weight: 500;
-}
 
-.block__desc {
-  margin: 13px 0px;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 43px;
-}
 
-.block__element {
-  display: flex;
-  margin: 27px 0px 13px 0px;
-}
 
-.block__price {
-  margin-right: 34px;
-  position: relative;
-  color: rgba(242, 242, 242, 1);
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 48.76px;
-}
 
-.block__btn {
-  color: rgba(0, 0, 0, 1);
+/*------------------------------------*\
+  #BUTTON
+\*------------------------------------*/
+
+.btn {
+  padding: 12px 48px;
   font-size: 14px;
+  line-height: 17.07px;
   font-weight: 600;
-  line-height: 17px;
-  text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  padding: 11px 48px 13px 48px;
   border-radius: 100px;
   border: none;
+}
+
+.btn--header { 
+  width: 170px;
+  height: 41px;
+  margin: 31px auto 14px 34px;
+  color: rgba(0, 0, 0, 1);
   background-color: rgba(255, 199, 0, 1);
 }
 
-.block__promo {
-  color: rgba(255, 199, 0, 1);
+.btn--black {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 1);
+}
+
+
+
+
+
+/*------------------------------------*\
+  #CONTENT-BLOCK
+\*------------------------------------*/
+
+.up-title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  color: rgba(43, 40, 53, 1);
+}
+
+.up-title--header {
   font-weight: 500;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.sub-title {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.07px;
+  color: rgba(3, 3, 3, 1);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 55px;
+  color: rgba(43, 40, 53, 1);
+}
+
+.title--header {
+  width: 508px;
+  height: 86px;
+  margin: 13px 0px;
+  font-size: 40px;
+  line-height: 43px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.title--card { font-weight: 500; }
+
+.desc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 27.01px;
+  color: rgba(3, 3, 3, 1);
+}
+
+.price {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48.76px;
+}
+
+.price--header { 
+  margin: 27px 0px 14px 0px;
+  color: rgba(242, 242, 242, 1); 
+}
+
+.price--black { color: rgba(0, 0, 0, 1); }
+
+.price--card {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30.48px;
+  color: rgba(157, 130, 32, 1);
+}
+
+.promo {
   font-size: 13px;
+  font-weight: 500;
   line-height: 19.62px;
+}
+
+.promo--header {
+  margin: 0px 0px;
+  color: rgba(255, 199, 0, 1); 
+}
+
+.promo--black { color: rgba(0, 0, 0, 1); }
+
+.promo--white { color: rgba(255, 255, 255, 1); }
+
+
+
+
+
+/*------------------------------------*\
+  #IMAGE
+\*------------------------------------*/
+
+.image {
+  width: auto;
+  height: auto;
 }
