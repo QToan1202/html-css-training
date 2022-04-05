@@ -2,6 +2,7 @@
 
 body { 
   font-family: 'Montserrat', sans-serif; 
+  box-sizing: border-box;
 }
 
 header {
@@ -30,10 +31,7 @@ nav {
   background: rgba(25, 23, 32, 0.4676);
 }
 
-.nav__logo {
-  margin: auto auto auto 100px;
-  align-items: flex-start;
-}
+.nav__logo { margin: 14px auto 14px 100px; }
 
 .nav__list { list-style-type: none; }
 
@@ -50,7 +48,7 @@ nav {
 
 .nav__item--group { margin-left: 50px; }
 
-.nav__item--margin-right { margin-right: 80px; }
+.nav__item--margin-right { margin-right: 95px; }
 
 
 
@@ -60,13 +58,28 @@ nav {
   #BLOCK
 \*------------------------------------*/
 
-.block { display: flex; }
+.block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.block--reverse { flex-direction: row-reverse; }
 
 .block__col { 
-  position: absolute;
   width: 508px;
-  top: 199px;
-  left: 55.35%;
+  height: auto;
+}
+
+.block__section {
+  width: 100vw;
+  height: 844px;
+}
+
+.block__section--bg {
+  background-color: rgba(255, 199, 0, 1);
+  background-image: url(../assets/images/layer_section-2.svg);
+  background-repeat: no-repeat;
 }
 
 
@@ -78,6 +91,9 @@ nav {
 \*------------------------------------*/
 
 .btn {
+  width: 170px;
+  height: 41px;
+  margin: 31px auto 14px 34px;
   padding: 12px 48px;
   font-size: 14px;
   line-height: 17.07px;
@@ -89,9 +105,6 @@ nav {
 }
 
 .btn--header { 
-  width: 170px;
-  height: 41px;
-  margin: 31px auto 14px 34px;
   color: rgba(0, 0, 0, 1);
   background-color: rgba(255, 199, 0, 1);
 }
@@ -110,11 +123,14 @@ nav {
 \*------------------------------------*/
 
 .up-title {
+  margin: 0px;
   font-size: 16px;
   font-weight: 400;
   line-height: 19.5px;
   color: rgba(43, 40, 53, 1);
 }
+
+.up-title--margin { margin-bottom: 70px; }
 
 .up-title--header {
   font-weight: 500;
@@ -129,7 +145,15 @@ nav {
   color: rgba(3, 3, 3, 1);
 }
 
+.sub-title--font {
+  margin: 13px 0px;
+  font-size: 40px;
+  line-height: 55px;
+}
+
 .title {
+  position: relative;
+  margin: 7px 0px;
   font-weight: 700;
   font-size: 50px;
   line-height: 55px;
@@ -148,6 +172,7 @@ nav {
 .title--card { font-weight: 500; }
 
 .desc {
+  margin-bottom: 43px;
   font-size: 14px;
   font-weight: 400;
   line-height: 27.01px;
@@ -155,13 +180,13 @@ nav {
 }
 
 .price {
+  margin: 27px 0px 14px 0px;
   font-size: 40px;
   font-weight: 400;
   line-height: 48.76px;
 }
 
 .price--header { 
-  margin: 27px 0px 14px 0px;
   color: rgba(242, 242, 242, 1); 
 }
 
@@ -197,7 +222,35 @@ nav {
   #IMAGE
 \*------------------------------------*/
 
-.image {
-  width: auto;
-  height: auto;
+.image { display: block; }
+
+
+
+
+/*------------------------------------*\
+  #OTHERS
+\*------------------------------------*/
+
+.dot {
+  margin: 19px 13px 24px 0px;
+  height: 37px;
+  width: 37px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid rgba(234, 234, 234, 1);
+  box-sizing: border-box;
+  box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.135817);
+}
+
+.dot--white { background-color: rgba(255, 255, 255, 1); }
+
+.dot--red { background-color: rgba(221, 86, 86, 1); }
+
+.dot--black { background-color: rgba(0, 0, 0, 1); }
+
+.group { display: flex; }
+
+.sup { 
+  position: absolute;
+  top: -35px;
 }
