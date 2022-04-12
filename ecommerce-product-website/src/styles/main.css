@@ -83,7 +83,17 @@ nav {
 
 .block--bg-section-3 { background-color: rgba(244, 244, 244, 1); }
 
-.block:nth-child(1) .content { background-color: red; }
+.block:nth-child(3) img { 
+  position: absolute;
+  top: 6px;
+  left: 49px;
+}
+
+.block:nth-child(3) .content { 
+  position: absolute;
+  top: 235px;
+  left: 785px;
+}
 
 
 
