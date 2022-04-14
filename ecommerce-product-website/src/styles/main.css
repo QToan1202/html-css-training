@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
-body { font-family: 'Montserrat', sans-serif; }
+body {  font-family: 'Montserrat', sans-serif; }
 
 .wrapper {
   margin-left: auto;
   margin-right: auto;
   width: 1440px;
+  box-sizing: border-box;
 }
 
 header {
@@ -25,7 +26,7 @@ header {
 
 nav {
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   width: 100vw;
   height: 78px;
   display: flex;
@@ -83,6 +84,31 @@ nav {
 
 .block--bg-section-3 { background-color: rgba(244, 244, 244, 1); }
 
+.block:nth-child(2) img { 
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.block:nth-child(2) .content { 
+  position: absolute;
+  top: 199px;
+  left: 797px;
+}
+
+.block--reverse:nth-child(2) img { 
+  position: absolute;
+  top: 47px;
+  left: 631px;
+}
+
+.block--reverse:nth-child(2) .content { 
+  position: absolute;
+  top: 235px;
+  left: 90px;
+}
+
+
 .block:nth-child(3) img { 
   position: absolute;
   top: 6px;
@@ -93,6 +119,18 @@ nav {
   position: absolute;
   top: 235px;
   left: 785px;
+}
+
+.block:nth-child(4) img { 
+  position: absolute;
+  top: 38px;
+  left: 676px;
+}
+
+.block:nth-child(4) .content { 
+  position: absolute;
+  top: 205px;
+  left: 93px;
 }
 
 
@@ -263,27 +301,27 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 34px auto 64.19px auto;
+  margin: 19px auto 64.19px auto;
   background-color: rgba(248, 248, 249, 1);
   width: 1253px;
   height: 334.81px;
   text-align: center;
 }
 
-.form__title { margin: 52px auto 17px auto; }
+.form-title--margin { margin: 10px auto 17px auto; }
 
-.form__sub-title { margin-bottom: 47px; }
+.form-sub-title--bottom { margin-bottom: 47px; }
 
 .input-text {
   margin-bottom: 19px;
   border: 1px solid #BFBFBF;
   border-radius: 18px;
-  width: 507px;
-  height: 36px;
+  width: 501px;
+  height: 32px;
 }
 
 .input-text::placeholder {
-  padding-left: 22px;
+  padding-left: 20px;
   font-weight: 400;
   font-size: 14px;
   line-height: 17.07px;
@@ -391,12 +429,15 @@ nav {
   height: 343.81px;
   display: grid;
   grid-template-columns: auto auto auto auto auto;
+  justify-content: center;
+  column-gap: 88px;
+  position: relative;
 }
 
 .grid-logo {
-  position: relative;
-  left: 135px;
-  top: 55.14px;
+  position: absolute;
+  left: 113px;
+  top: 47.14px;
 }
 
 .grid-title { 
@@ -410,8 +451,6 @@ nav {
 
 .grid-item {
   color: rgba(184, 184, 184, 1);
-  margin-left: auto;
-  margin-right: auto;
   font-weight: 500;
   font-size: 12px;
   line-height: 22px;
@@ -420,6 +459,9 @@ nav {
 .grid-line { 
   grid-column: 1 / 6; 
   line-height: 14.63px;
+  grid-row-end: 6;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 ul > li {
@@ -445,13 +487,53 @@ ul > li {
   border: 1px solid rgba(234, 234, 234, 1);
   box-sizing: border-box;
   box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.135817);
+  position: relative;
 }
 
 .dot--white { background-color: rgba(255, 255, 255, 1); }
 
+.dot--white::after {
+  content: "";
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 1);
+  position: absolute;
+  top: -5px;
+  left: -7px
+}
+
 .dot--red { background-color: rgba(221, 86, 86, 1); }
 
 .dot--black { background-color: rgba(0, 0, 0, 1); }
+
+.carousel {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.carousel:nth-child(2) {
+  position: absolute;
+  top: 643px;
+  left: 979px;
+}
+
+.carousel:nth-child(3) {
+  position: absolute;
+  top: 643px;
+  left: 1004px;
+}
+
+.carousel:nth-child(4) {
+  position: absolute;
+  top: 643px;
+  left: 1028px;
+}
+
+.carousel--black { background-color: rgba(0, 0, 0, 1); }
+
+.carousel--gray { background-color: rgba(209, 209, 209, 1); }
 
 .group { display: flex; }
 
