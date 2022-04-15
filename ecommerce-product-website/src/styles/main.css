@@ -364,8 +364,8 @@ nav {
 
 .card:nth-child(1) .card__img {
   position: absolute;
-  top: 5px;
-  left: 4px;
+  top: -4px;
+  left: 2px;
 }
 
 .card:nth-child(2) .card__img {
