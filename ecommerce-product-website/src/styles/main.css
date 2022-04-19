@@ -130,9 +130,13 @@ nav {
 
 .block:nth-child(4) .content { 
   position: absolute;
-  top: 221px;
-  left: 93px;
+  top: 206px;
+  left: 97px;
 }
+
+.block:nth-child(4) .desc { margin: 84px 0px 44px -4px; }
+
+.block:nth-child(4) .group .price { margin: 27px 0px 0px -4px; }
 
 .block:nth-child(4) .group .btn { margin: 30px auto 17px 42px; }
 
