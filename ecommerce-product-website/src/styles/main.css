@@ -28,19 +28,17 @@ nav {
   width: 1440px;
   height: 78px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   background: rgba(25, 23, 32, 0.4676);
 }
 
-.nav__logo { margin: 19px auto 15px 53px; }
+.nav__logo { margin: 13px auto 15px 94px; }
 
 .nav__list { list-style-type: none; }
 
 .nav__item {
   display: inline-block;
   color: rgba(255, 255, 255, 1);
-  margin-left: 100px;
+  margin: 16px 20px 0px 88px;
   font-size: 15px;
   font-weight: 500;
   line-height: 18.29px;
@@ -48,9 +46,9 @@ nav {
   letter-spacing: 1.90909px;
 }
 
-.nav__item--group { margin-left: 50px; }
+.nav__item--group { margin: 12px 0px 0px 40px; }
 
-.nav__item--margin-right { margin-right: 95px; }
+.nav__item--margin-right { margin-right: 57px; }
 
 
 
@@ -99,9 +97,13 @@ nav {
 
 .block--reverse:nth-child(2) .content { 
   position: absolute;
-  top: 235px;
-  left: 90px;
+  top: 240px;
+  left: 93px;
 }
+
+.block--reverse:nth-child(2) .group .price { margin: 27px 8px 0px 3px; }
+
+.block--reverse:nth-child(2) .promo { margin: -1px 0px 0px 2px; }
 
 
 .block:nth-child(3) img { 
@@ -116,6 +118,10 @@ nav {
   left: 785px;
 }
 
+.block:nth-child(3) .group .price { margin: 27px 7px 0px -3px; }
+
+.block:nth-child(3) .promo { margin: 2px 0px 0px -2px; }
+
 .block:nth-child(4) img { 
   position: absolute;
   top: 38px;
@@ -124,9 +130,11 @@ nav {
 
 .block:nth-child(4) .content { 
   position: absolute;
-  top: 205px;
+  top: 221px;
   left: 93px;
 }
+
+.block:nth-child(4) .group .btn { margin: 30px auto 17px 42px; }
 
 
 
@@ -139,7 +147,7 @@ nav {
 .btn {
   width: 170px;
   height: 41px;
-  margin: 30px auto 17px 34px;
+  margin: 30px auto 17px 35px;
   padding: 12px 48px;
   font-size: 14px;
   line-height: 17.07px;
@@ -170,9 +178,13 @@ nav {
 
 .btn--card { 
   z-index: 1;
-  margin: 15px 21px;
+  margin: 15px 23px;
   padding: 12px 30px;
   width: 145px;
+}
+
+.btn--card-line-2 {
+  margin: 21px 0px 0px 22px;
 }
 
 
@@ -184,7 +196,7 @@ nav {
 \*------------------------------------*/
 
 .upper-title {
-  margin: 0px;
+  margin: 0px 0px 0px 0px;
   font-size: 16px;
   font-weight: 400;
   line-height: 19.5px;
@@ -207,14 +219,14 @@ nav {
 }
 
 .sub-title--font {
-  margin: 13px 0px;
+  margin: 19px 0px 0px 3px;
   font-size: 40px;
   line-height: 55px;
 }
 
 .title {
   position: relative;
-  margin: 7px 0px;
+  margin: 7px -2.56px;
   font-weight: 700;
   font-size: 50px;
   line-height: 55px;
@@ -237,7 +249,7 @@ nav {
 .title--uppercase { text-transform: uppercase; }
 
 .desc {
-  margin-bottom: 43px;
+  margin: 24px 0px 43px -2px;
   font-size: 14px;
   font-weight: 400;
   line-height: 27.01px;
@@ -263,7 +275,7 @@ nav {
 }
 
 .promo--header {
-  margin: -2px 0px;
+  margin: -3px 0px;
   color: rgba(255, 199, 0, 1); 
 }
 
@@ -291,7 +303,7 @@ nav {
   text-align: center;
 }
 
-.form-title--margin { margin: 10px auto 17px auto; }
+.form-title--margin { margin: 0px auto 17px auto; }
 
 .form-sub-title--bottom { margin: 0px 0px 47px 0px; }
 
@@ -340,17 +352,21 @@ nav {
   height: 325px;
 }
 
-.card__title--margin { margin: 36px auto 2px auto; }
+.card__title--margin { margin: 26px 0px 2px -2px; }
 
 .card--hidden { visibility: hidden; }
 
 .card--size { font-size: 40px; }
 
 .card__desc { 
-  margin: 0px 0px;
+  margin: 0px -2px;
   width: 267px;
   line-height: 21.01px;
 }
+
+.card__title--margin-line-1 { margin: 26px 0px 2px -2px; }
+
+.card__title--margin-line-2 { margin: 5px 0px 5px -2px; }
 
 .card__price {
   display: inline-block;
@@ -360,7 +376,9 @@ nav {
   color: rgba(157, 130, 32, 1);
 }
 
-.card__price--margin { margin: 21px 0px; }
+.card__price--margin { margin: 21px -2px; }
+
+.card__price--margin-line-2 { margin: 27px -2px; }
 
 .card:nth-child(1) .card__img {
   position: absolute;
@@ -370,33 +388,43 @@ nav {
 
 .card:nth-child(2) .card__img {
   position: absolute;
-  top: -47px;
-  left: -21px;
+  top: -61px;
+  left: -23px;
 }
+
+.card:nth-child(2) .group .btn { margin: 15px 0px 0px 30px; }
 
 .card:nth-child(3) .card__img {
   position: absolute;
-  top: 36px;
-  left: 28px;
+  top: 21px;
+  left: 27px;
 }
+
+.card:nth-child(3) .group .btn { margin: 15px 0px 0px 30px; }
 
 .card:nth-child(4) .card__img {
   position: absolute;
-  top: 71px;
-  left: 52px;
+  top: 38px;
+  left: 51px;
 }
 
 .card:nth-child(5) .card__img {
   position: absolute;
-  top: 13px;
-  left: 34px;
+  top: -19px;
+  left: 32px;
 }
+
+.card:nth-child(5) .group .btn { margin: 21px 0px 0px 32px; }
 
 .card:nth-child(6) .card__img {
   position:  absolute;
-  top: 131px;
-  left: 95px;
+  top: 98px;
+  left: 93px;
 }
+
+.card:nth-child(6) .group .btn { margin: 21px 0px 0px 24px; }
+
+.card:nth-child(3n) { padding-left: 32px; }
 
 
 
@@ -411,15 +439,15 @@ nav {
   height: 343.81px;
   display: grid;
   grid-template-columns: auto auto auto auto auto;
-  justify-content: center;
+  justify-content: space-evenly;
   column-gap: 88px;
   position: relative;
 }
 
 .grid-logo {
   position: absolute;
-  left: 113px;
-  top: 47.14px;
+  left: 135px;
+  top: 54px;
 }
 
 .grid-title { 
@@ -432,6 +460,7 @@ nav {
 }
 
 .grid-item {
+  padding-left: 0px;
   color: rgba(184, 184, 184, 1);
   font-weight: 500;
   font-size: 12px;
@@ -446,7 +475,8 @@ nav {
   margin-right: auto;
 }
 
-ul > li {
+.grid-item > ul {
+  margin: -1px -41px 22px -108px;
   list-style-type: none;
   text-transform: uppercase;
 }
@@ -461,7 +491,7 @@ ul > li {
 \*------------------------------------*/
 
 .dot {
-  margin: 19px 13px 24px 0px;
+  margin: 30px 4px 22px 8px;
   height: 37px;
   width: 37px;
   border-radius: 50%;
@@ -476,8 +506,8 @@ ul > li {
 
 .dot--white::after {
   content: "";
-  height: 46px;
-  width: 46px;
+  height: 44px;
+  width: 44px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 1);
   position: absolute;
