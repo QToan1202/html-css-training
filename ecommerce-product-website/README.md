@@ -15,21 +15,21 @@ Ecommerce Product Website Partha Chakraborty
 ## Information
 
 * Technologies: **HTML/CSS**
-* Timeline: **5 days**
+* Timeline: **5 days** (_29/03/2022-19/04/2022_)
 * Team size: **1 developer**
-* IDE: **VSCode**
 * Source code manager: **GitHub**
 * Estimation details plan: [**_Link_**](https://docs.google.com/document/d/1WaqH4nsLWT6e1bgTYO6RdmRo-in43imm/edit?usp=sharing&ouid=106375431505893946552&rtpof=true&sd=true)
 
-## Required
+## Technology
 
-* Apply HTML Inspector
-* CSS rules
-* Flexbox
-* BEM naming convention
+* Editor: **VSCode**
+* Techniques: **HTML5/CSS3**
 
 ## Target
 
+* Apply HTML Inspector
+* CSS rules
+* BEM naming convention
 * Use HTML tags sensibly
 * Know how to use Flexbox
 
@@ -40,7 +40,7 @@ Open Windows PowerShell or cmd or [Windows Terminal](https://www.microsoft.com/e
 **_Step 1:_** Clone feature/practice-1 branch
 
 ```
-git clone --single-branch --branch feature/practice-1 https://github.com/QToan1202/html-css-training.git
+git clone --single-branch --branch feature/practice-1 git@github.com:QToan1202/html-css-training.git
 ```
 
 **_Step 2:_**  Move to ecommerce-product-website folder
@@ -59,10 +59,4 @@ npm install --save-dev parcel
 
 ```
 npm run dev
-```
-
-_or_
-
-```
-npx parcel src/index.html
 ```
