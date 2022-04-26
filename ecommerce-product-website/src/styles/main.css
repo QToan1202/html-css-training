@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
-body { font-family: 'Montserrat', sans-serif; }
+body { 
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
 
 * {
   margin: 0;
@@ -13,7 +16,7 @@ body { font-family: 'Montserrat', sans-serif; }
   width: 1440px;
 }
 
-header {
+.head {
   height: 616px;
   background-color: rgba(43, 40, 53, 1);
   position: relative;
@@ -27,7 +30,7 @@ header {
   #NAV
 \*------------------------------------*/
 
-nav {
+.navbar {
   position: fixed;
   z-index: 2;
   width: 1440px;
@@ -36,22 +39,23 @@ nav {
   background: rgba(25, 23, 32, 0.47);
 }
 
-.nav__logo { 
-  margin: 13px auto 15px 94px; 
+.navbar__logo { 
+  margin: 13px 94px; 
 }
 
-.nav__list { 
-  margin: auto;
+.list { 
+  margin: 32px -17px;
   list-style-type: none; 
 }
 
-.nav__item {
+.list__item {
   display: inline-block;
+  margin: 0px 43px;
 }
 
-.nav__item--link {
+.list__item--link {
   color: rgba(255, 255, 255, 1);
-  padding: 10px 55px;
+  padding: 10px 10px;
   font-size: 15px;
   font-weight: 500;
   line-height: 18.29px;
@@ -60,127 +64,64 @@ nav {
   letter-spacing: 1.91px;
 }
 
-.nav__item--group { 
-  padding: 12px 0px 0px 40px; 
+.list--margin {
+  margin: 27px 71px;
 }
 
-.nav__item--margin-right { 
-  margin-right: 57px; 
+.list__icon { 
+  display: inline-block;
+  margin: 0px 18px;
 }
+
+.list__icon--margin {
+  margin: 0px 0px;
+  padding: 5px 5px;
+}
+
 
 
 
 
 
 /*------------------------------------*\
-  #BLOCK
+  #area
 \*------------------------------------*/
 
-.block {
+.area {
   display: flex;
+  position: relative;
   justify-content: start;
   align-items: center;
-  position: relative;
 }
 
-.block--reverse { 
+.area__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.area--reverse { 
   flex-direction: row-reverse; 
 }
 
-.block--size { 
+.area--size { 
   height: 844px; 
 }
 
-.block--bg-section-2 {
+.area--bg-section-2 {
   background-color: rgba(255, 199, 0, 1);
   background-image: url(../assets/images/layer_section-2.svg);
   background-repeat: no-repeat;
 }
 
-.block--bg-section-3 { 
+.area--bg-section-3 { 
   background-color: rgba(244, 244, 244, 1); 
 }
 
-.content {
-  align-self: center;
-}
-
-/* .block:nth-child(2) img { 
+.head .area .content--area:nth-child(2) {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 200px;
+  right: 135px;
 }
-
-.block:nth-child(2) .content { 
-  position: absolute;
-  top: 199px;
-  left: 797px;
-} */
-
-/* .block--reverse:nth-child(2) img { 
-  position: absolute;
-  top: 47px;
-  left: 631px;
-}
-
-.block--reverse:nth-child(2) .content { 
-  position: absolute;
-  top: 240px;
-  left: 93px;
-}
-
-.block--reverse:nth-child(2) .group .price { 
-  margin: 27px 8px 0px 3px; 
-}
-
-.block--reverse:nth-child(2) .promo { 
-  margin: -1px 0px 0px 2px; 
-}
-
-
-.block:nth-child(3) img { 
-  position: absolute;
-  top: 6px;
-  left: 49px;
-}
-
-.block:nth-child(3) .content { 
-  position: absolute;
-  top: 235px;
-  left: 785px;
-}
-
-.block:nth-child(3) .group .price { 
-  margin: 27px 7px 0px -3px; 
-}
-
-.block:nth-child(3) .promo { 
-  margin: 2px 0px 0px -2px; 
-}
-
-.block:nth-child(4) img { 
-  position: absolute;
-  top: 38px;
-  left: 676px;
-}
-
-.block:nth-child(4) .content { 
-  position: absolute;
-  top: 206px;
-  left: 97px;
-}
-
-.block:nth-child(4) .desc { 
-  margin: 84px 0px 44px -4px; 
-}
-
-.block:nth-child(4) .group .price { 
-  margin: 27px 0px 0px -4px; 
-}
-
-.block:nth-child(4) .group .btn { 
-  margin: 30px auto 17px 42px; 
-} */
 
 
 
@@ -216,8 +157,7 @@ nav {
 }
 
 .btn--form {
-  margin: 0;
-  padding: 0;
+  margin: 2px 0px;
   width: 507px;
   height: 41px;
 }
@@ -229,16 +169,12 @@ nav {
   width: 145px;
 }
 
-.btn--card-line-2 {
-  margin: 21px 0px 0px 22px;
-}
-
 
 
 
 
 /*------------------------------------*\
-  #CONTENT
+  #TEXT
 \*------------------------------------*/
 
 .upper-title {
@@ -360,7 +296,7 @@ nav {
   height: 334.81px;
 }
 
-.form-content {
+.form__content {
   padding: 51px 0px;
   display: flex;
   flex-direction: column;
@@ -368,27 +304,27 @@ nav {
   align-items: center;
 }
 
-.form-title--margin { 
+.form__title--margin { 
   
   margin: 0px auto 17px auto; 
 
 }
 
-.form-sub-title--bottom { 
+.form__subtitle--bottom { 
   
   margin: 0px 0px 47px 0px; 
 
 }
 
-.input-text {
-  margin-bottom: 19px;
+.form__input {
+  margin-bottom: 15px;
   border: 1px solid #BFBFBF;
   border-radius: 18px;
-  width: 501px;
-  height: 32px;
+  width: 507px;
+  height: 36px;
 }
 
-.input-text::placeholder {
+.form__input::placeholder {
   padding-left: 20px;
   font-weight: 400;
   font-size: 14px;
@@ -447,12 +383,8 @@ nav {
   line-height: 21.01px;
 }
 
-.card__title--margin-line-1 { 
+.card__title--margin { 
   margin: 26px 0px 2px -2px; 
-}
-
-.card__title--margin-line-2 { 
-  margin: 5px 0px 5px -2px; 
 }
 
 .card__price {
@@ -467,10 +399,6 @@ nav {
   margin: 21px -2px; 
 }
 
-.card__price--margin-line-2 { 
-  margin: 27px -2px; 
-}
-
 .card:nth-child(1) .card__img {
   position: absolute;
   top: -4px;
@@ -480,7 +408,7 @@ nav {
 .card:nth-child(2) .card__img {
   position: absolute;
   top: -61px;
-  left: -23px;
+  left: -50px;
 }
 
 .card:nth-child(2) .group .btn { 
@@ -506,7 +434,7 @@ nav {
 .card:nth-child(5) .card__img {
   position: absolute;
   top: -19px;
-  left: 32px;
+  left: 5px;
 }
 
 .card:nth-child(5) .group .btn { 
@@ -540,8 +468,10 @@ nav {
   height: 343.81px;
   display: grid;
   grid-template-columns: auto auto auto auto auto;
-  justify-content: space-evenly;
+  justify-content: space-between;
   position: relative;
+  box-sizing: border-box;
+  padding: 55px 127px;
 }
 
 .grid__logo {
@@ -567,12 +497,13 @@ nav {
   line-height: 22px;
 }
 
-.grid__line { 
+.grid__item--line { 
   grid-column: 1 / 6; 
   line-height: 14.63px;
   grid-row-end: 6;
   margin-left: auto;
   margin-right: auto;
+  padding: 47px 0px;
 }
 
 .grid__item > ul {
@@ -593,12 +524,28 @@ nav {
 
 
 
+/*------------------------------------*\
+  #CONTENT
+\*------------------------------------*/
+
+.content--area {
+  text-align: left;
+  padding: 0px 0px;
+}
+
+.content--card {
+  width: fit-content;
+  height: 235px;
+}
+
+
+
 
 /*------------------------------------*\
   #OTHERS
 \*------------------------------------*/
 
-.dot {
+.dot__item {
   margin: 30px 4px 22px 8px;
   height: 37px;
   width: 37px;
@@ -610,11 +557,11 @@ nav {
   position: relative;
 }
 
-.dot--white { 
+.dot__item--white { 
   background-color: rgba(255, 255, 255, 1); 
 }
 
-.dot--white::after {
+.dot__item--white::after {
   content: "";
   height: 44px;
   width: 44px;
@@ -625,25 +572,31 @@ nav {
   left: -6px
 }
 
-.dot--red { 
+.dot__item--red { 
   background-color: rgba(221, 86, 86, 1); 
 }
 
-.dot--black { 
+.dot__item--black { 
   background-color: rgba(0, 0, 0, 1); 
 }
 
 .carousel {
+  /* position: ; */
+  z-index: 1;
+}
+
+.carousel__item {
   width: 10px;
   height: 10px;
   border-radius: 50%;
+  z-index: 100;
 }
 
-.carousel--black { 
+.carousel__item--black { 
   background-color: rgba(0, 0, 0, 1); 
 }
 
-.carousel--gray { 
+.carousel__item--gray { 
   background-color: rgba(209, 209, 209, 1); 
 }
 
