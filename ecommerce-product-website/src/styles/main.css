@@ -2,7 +2,6 @@
 
 body { 
   font-family: 'Montserrat', sans-serif;
-  box-sizing: border-box;
 }
 
 * {
@@ -11,8 +10,7 @@ body {
 }
 
 .wrapper {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   width: 1440px;
 }
 
@@ -33,8 +31,8 @@ body {
 .navbar {
   position: fixed;
   z-index: 2;
-  width: 1440px;
   height: 78px;
+  width: 1440px;
   display: flex;
   background: rgba(25, 23, 32, 0.47);
 }
@@ -44,18 +42,18 @@ body {
 }
 
 .list { 
-  margin: 32px -17px;
+  margin: 0px -20px;
   list-style-type: none; 
 }
 
 .list__item {
   display: inline-block;
-  margin: 0px 43px;
+  margin: 32px 49px;
 }
 
 .list__item--link {
   color: rgba(255, 255, 255, 1);
-  padding: 10px 10px;
+  padding: 5px 5px;
   font-size: 15px;
   font-weight: 500;
   line-height: 18.29px;
@@ -65,16 +63,15 @@ body {
 }
 
 .list--margin {
-  margin: 27px 71px;
+  margin-left: 79px;
 }
 
 .list__icon { 
   display: inline-block;
-  margin: 0px 18px;
+  margin: 27px 16px;
 }
 
-.list__icon--margin {
-  margin: 0px 0px;
+.list__icon--padding {
   padding: 5px 5px;
 }
 
@@ -97,6 +94,7 @@ body {
 .area__item {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .area--reverse { 
@@ -117,7 +115,18 @@ body {
   background-color: rgba(244, 244, 244, 1); 
 }
 
-.head .area .content--area:nth-child(2) {
+.area__image {
+  flex-shrink: 0;
+  padding-top: 4px;
+  padding-right: 54px;
+}
+
+.area__image--reset {
+  padding: 0;
+}
+
+.head .area .content--area {
+  padding: 0;
   position: absolute;
   top: 200px;
   right: 135px;
@@ -134,7 +143,7 @@ body {
 .btn {
   width: 170px;
   height: 41px;
-  margin: 30px auto 17px 35px;
+  margin: 30px auto 17px 41px;
   padding: 12px 48px;
   font-size: 14px;
   line-height: 17.07px;
@@ -149,6 +158,10 @@ body {
 .btn--yellow { 
   color: rgba(0, 0, 0, 1);
   background-color: rgba(255, 199, 0, 1);
+}
+
+.btn--header-margin {
+  margin-left: 35px;
 }
 
 .btn--black {
@@ -186,7 +199,7 @@ body {
 }
 
 .upper-title--margin-bottom { 
-  margin-bottom: 70px; 
+  margin-bottom: 86px; 
 }
 
 .upper-title--header {
@@ -361,7 +374,6 @@ body {
 
 .card__holder { 
   position: relative;
-  width: 393px;
   height: 325px;
 }
 
@@ -411,18 +423,10 @@ body {
   left: -50px;
 }
 
-.card:nth-child(2) .group .btn { 
-  margin: 15px 0px 0px 30px; 
-}
-
 .card:nth-child(3) .card__img {
   position: absolute;
   top: 21px;
-  left: 27px;
-}
-
-.card:nth-child(3) .group .btn { 
-  margin: 15px 0px 0px 30px; 
+  left: 10px;
 }
 
 .card:nth-child(4) .card__img {
@@ -437,22 +441,10 @@ body {
   left: 5px;
 }
 
-.card:nth-child(5) .group .btn { 
-  margin: 21px 0px 0px 32px; 
-}
-
 .card:nth-child(6) .card__img {
   position:  absolute;
   top: 98px;
-  left: 93px;
-}
-
-.card:nth-child(6) .group .btn { 
-  margin: 21px 0px 0px 24px; 
-}
-
-.card:nth-child(3n) { 
-  padding-left: 32px; 
+  left: 76px;
 }
 
 
@@ -480,7 +472,7 @@ body {
   top: 54px;
 }
 
-.grid__title { 
+.grid__item--title { 
   text-transform: capitalize;
   text-decoration: none;
   font-weight: 600;
@@ -529,13 +521,43 @@ body {
 \*------------------------------------*/
 
 .content--area {
-  text-align: left;
-  padding: 0px 0px;
+  padding-top: 11px;
+  padding-left: 93px;
+  flex: 1 1 40%;
+}
+
+.area:nth-child(3) .content--area {
+  padding: 0;
+  padding-left: 35px;
+  padding-bottom: 8px;
+}
+
+.area:nth-child(3) .area__image {
+  padding: 0;
+  padding-left: 49px;
+  padding-bottom: 28px;
+}
+
+.area:nth-child(4) .content--area {
+  padding: 0;
+  padding-bottom: 89px;
+  padding-left: 94px;
+}
+
+.area:nth-child(4) .area__image {
+  padding: 0;
+  padding-bottom: 29px;
+  padding-right: 25px;
 }
 
 .content--card {
   width: fit-content;
   height: 235px;
+}
+
+.area:first-child .area__image {
+  background-color: red;
+  padding: 0;
 }
 
 
@@ -581,15 +603,17 @@ body {
 }
 
 .carousel {
-  /* position: ; */
-  z-index: 1;
+  position: absolute;
+  bottom: 126px;
+  right: 397px;
 }
 
 .carousel__item {
-  width: 10px;
   height: 10px;
+  width: 10px;
   border-radius: 50%;
-  z-index: 100;
+  display: inline-block;
+  margin: 0px 5px;
 }
 
 .carousel__item--black { 
@@ -602,9 +626,4 @@ body {
 
 .group { 
   display: flex; 
-}
-
-.sup { 
-  position: absolute;
-  top: -35px;
 }
