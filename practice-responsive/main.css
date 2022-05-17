@@ -1,0 +1,37 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 10px auto;
+  padding: 10px 10px;
+  max-width: 1440px;
+  width: 100%;
+  border: 1px black solid;
+}
+
+@media screen and (max-width: 768px) {
+  p {
+    color: white;
+    background-color: gray;
+    transition: 0.3s;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  p {
+    color: gray;
+    background-color: white;
+    transition: 0.3s;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  p {
+    color: white;
+    background-color: black;
+    transition: 0.3s;
+  }
+}
