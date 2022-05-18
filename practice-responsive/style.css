@@ -1,0 +1,63 @@
+:root {
+  --screen-size: 1440px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+}
+
+.container {
+  max-width: var(--screen-size);
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: 0.5%;
+  padding: 0.5%;
+  min-width: 250px;
+  width: 20%;
+  height: auto;
+  background-color: antiquewhite;
+}
+
+@media screen and (max-width: 520px) {
+  .card {
+    font-size: 20px;
+    color: white;
+    background-color: purple;
+    transition: ease 0.3s;
+  }
+}
+
+@media screen and (min-width: 521px) {
+  .card {
+    font-size: 20px;
+    color: black;
+    background-color: whitesmoke;
+    transition: ease 0.3s;
+  }
+}
+
+@media screen and (min-width: 798px) {
+  .card {
+    font-size: 18px;
+    color: red;
+    transition: ease 0.3s;
+  }
+}
+
+@media screen and (min-width: 1087px) {
+  .card {
+    font-size: 18px;
+    color: blue;
+    transition: ease 0.3s;
+  }
+}
