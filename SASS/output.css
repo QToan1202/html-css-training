@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: 10px;
+  padding: 10px;
+  width: 250px;
+  background-color: rgb(187, 181, 155);
+  border: 1px black solid;
+  border-radius: 10px;
+}
+.card--style {
+  background-color: rgb(98, 213, 159);
+  border: 1px black solid;
+  border-radius: 30px;
+}
+.card__title {
+  color: rebeccapurple;
+}
+.card__title--danger {
+  color: red;
+}
+.card__desc {
+  padding: 10px 0;
+  font-style: italic;
+}
+.card__desc--light {
+  font-weight: bold;
+  font-style: normal;
+  color: white;
+}
+.card__btn {
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+  background-color: green;
+  border: 1px white dashed;
+  border-radius: 10px;
+}
+.card__btn--warning {
+  background-color: yellow;
+  color: black;
+}
+
+/*# sourceMappingURL=output.css.map */
