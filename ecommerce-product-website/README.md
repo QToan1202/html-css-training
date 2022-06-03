@@ -1,8 +1,9 @@
 # HTML CSS TRAINING
 
-## Practice one
+## Practice two
 
 Using HTML/CSS to build a web page
+Implement from [practice one](https://github.com/QToan1202/html-css-training/tree/feature/practice-1/ecommerce-product-website)
 
 ## Design
 
@@ -10,20 +11,16 @@ Using HTML/CSS to build a web page
 
 ## Topic name
 
-Ecommerce Product Website Partha Chakraborty
+Ecommerce Product Website
 
 ## Information
 
-* Technologies: **HTML/CSS**
-* Timeline: **5 days** (_29/03/2022-19/04/2022_)
+* Technologies: **HTML5/CSS3**
+* Editor: **VSCode**
+* Timeline: **4 days** (_02/06/2022-15/06/2022_)
 * Team size: **1 developer**
 * Source code manager: **GitHub**
-* Estimation details plan: [**_Link_**](https://docs.google.com/document/d/1WaqH4nsLWT6e1bgTYO6RdmRo-in43imm/edit?usp=sharing&ouid=106375431505893946552&rtpof=true&sd=true)
-
-## Technology
-
-* Editor: **VSCode**
-* Techniques: **HTML5/CSS3**
+* Estimation details plan: [**_Link_**](https://docs.google.com/document/d/1-T9Y-uQ7flwG_jB92HvXw4E-ThylmpCI/edit?usp=sharing&ouid=106375431505893946552&rtpof=true&sd=true)
 
 ## Target
 
@@ -32,6 +29,8 @@ Ecommerce Product Website Partha Chakraborty
 * BEM naming convention
 * Use HTML tags sensibly
 * Know how to use Flexbox
+* Practice making a responsive website
+* Using media queries for mobile/tablet devices
 
 ## Install and Run
 
@@ -40,7 +39,7 @@ Open Windows PowerShell or cmd or [Windows Terminal](https://www.microsoft.com/e
 **_Step 1:_** Clone feature/practice-1 branch
 
 ```
-git clone --single-branch --branch feature/practice-1 git@github.com:QToan1202/html-css-training.git
+git clone --single-branch --branch feature/practice-2 git@github.com:QToan1202/html-css-training.git
 ```
 
 **_Step 2:_**  Move to ecommerce-product-website folder
