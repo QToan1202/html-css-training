@@ -2,8 +2,7 @@
 
 ## Practice two
 
-Using HTML/CSS to build a web page
-Implement from [practice one](https://github.com/QToan1202/html-css-training/tree/feature/practice-1/ecommerce-product-website)
+Implement website from [practice one](https://github.com/QToan1202/html-css-training/tree/feature/practice-1/ecommerce-product-website) to build a reponsive web page that can work on table, mobile devices.
 
 ## Design
 
