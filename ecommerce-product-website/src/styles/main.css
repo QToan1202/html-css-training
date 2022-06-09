@@ -426,6 +426,7 @@ body {
 }
 
 .card {
+  max-width: 390px;
   box-sizing: content-box;
   margin: auto 18px;
   margin-top: 35px;
@@ -701,7 +702,7 @@ body {
   }
 
   .content--header {
-    padding-right: 3%;
+    padding-right: 6vw;
   }
 
   .pd-footer {
@@ -715,6 +716,56 @@ body {
 }
 
 @media only screen and (max-width: 1200px) {
+
+
+  .pd-product-speaker, .pd-product-beats, .pd-product-inear {
+    padding-left: 1vw;
+    padding-right: 1vw;
+  }
+
+  .area__img, .pd-img-product-speaker, .pd-img-product-beats, .pd-img-product-inear {
+    width: 60vw;
+    height: auto;
+  }
+
+  .area__img {
+    left: 0;
+  }
+
+  .content--header {
+    padding-top: 140px;
+    padding-bottom: 145px;
+  }
+
+  .pd-content-product-speaker {
+    padding-top: 160px;
+    padding-bottom: 90px;
+  }
+
+  .pd-content-product-beats {
+    padding-left: 0;
+    padding-top: 120px;
+    padding-bottom: 70px;
+  } 
+
+  .pd-content-product-inear {
+    padding-top: 100px;
+    padding-bottom: 110px;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+  
+  .btn {
+    width: 150px;
+    padding: 0;
+  }
+
+  .btn--form {
+    width: 50vw;
+  }
+
   .header-container {
     background-color: transparent;
   }
@@ -727,11 +778,26 @@ body {
     display: inline-flex;
   }
 
+  .form__input {
+    width: 50vw;
+  }
+
+  .footer__list {
+    margin: 0px 0px;
+  }
+
+  .carousel {
+    display: none;
+  }
 
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 850px) {
 
+  .area__img, .pd-img-product-speaker, .pd-img-product-beats, .pd-img-product-inear {
+    width: auto;
+    height: auto;
+  }
 
   .area--header-bg {
     background-color: transparent;
@@ -803,22 +869,13 @@ body {
     background-color:rgb(43, 40, 53);
   }
 
-  .form__input {
-    width: 298px;
-  }
-
-  .btn {
-    width: 150px;
-    padding: 0;
-  }
-
-  .btn--form {
-    width: 298px;
+  .form__input, .btn--form {
+    min-width: 298px;
   }
 
   .content--card {
     padding: 357px 50px 32px 25px;
-}
+  }
 
   .form__subtitle--bottom {
     text-align: center;
@@ -853,9 +910,5 @@ body {
 
   .footer__item--state {
     display: block;
-  }
-
-  .carousel {
-    display: none;
   }
 }
