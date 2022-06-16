@@ -1,0 +1,43 @@
+.btn {
+  width: 170px;
+  height: 41px;
+  margin: 30px auto 17px 41px;
+  padding: 12px 48px;
+  font-size: 14px;
+  line-height: 17.07px;
+  font-family: var(--font-600);
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+
+  &--warning {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 199, 0);
+  } 
+  
+  &--header {
+    margin-left: 35px;
+    margin-bottom: 11px;
+  }
+  
+  &--dark {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+  }
+  
+  &--form {
+    margin: 4px 0px;
+    width: 507px;
+    height: 41px;
+  }
+  
+  &--card { 
+    z-index: 1;
+    margin: 15px 19px;
+    padding: 12px 30px;
+    width: 145px;
+  }
+}
+

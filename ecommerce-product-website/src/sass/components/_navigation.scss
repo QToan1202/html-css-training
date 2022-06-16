@@ -1,0 +1,47 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list { 
+  list-style-type: none; 
+  padding-top: 19px;
+  padding-left: 73px;
+
+  &__item {
+    display: inline-block;
+    padding: 0px 49px;
+
+    &--link {
+      color: rgb(255, 255, 255);
+      padding: 5px 5px;
+      font-size: 15px;
+      font-family: var(--font-500);
+      line-height: 18.29px;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 1.91px;
+    }
+  }
+  
+  
+  &--spacing {
+    padding-top: 14px;
+    padding-left: 60px;
+  }
+  
+  &__icon { 
+    display: inline-block;
+    padding: 0px 16px;
+  }
+  
+  &__account-icon--padding {
+    padding: 0px 21px;
+  }
+  
+  &__icon--padding {
+    padding: 5px 5px;
+  }
+}
+
+

@@ -1,0 +1,76 @@
+.card {
+  max-width: 390px;
+  box-sizing: content-box;
+  margin: auto 18px;
+  margin-top: 35px;
+  background-color: rgb(248, 248, 249);
+
+  &--spacing { 
+    margin-top: 23px;
+  }
+  
+  &--size { 
+    font-size: 40px; 
+  }
+  
+  &__desc { 
+    margin: 0px;
+    width: 267px;
+    line-height: 21px;
+  }
+  
+  &__price {
+    display: inline-block;
+    font-size: 25px;
+    font-family: var(--font-600);
+    line-height: 30.48px;
+    color: rgb(157, 130, 32);
+
+    &--spacing { 
+      margin: 20px 0px; 
+    }
+  }
+  
+  &--backgroud-first {
+    background-image: url(../../assets/images/yellow-headphone.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+  
+  &--backgroud-second {
+    background-image: url(../../assets/images/black-inear.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+  
+  &--backgroud-third {
+    background-image: url(../../assets/images/gray-headphone.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+  
+  &--backgroud-fourth {
+    background-image: url(../../assets/images/gold-inear.svg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
+  
+  &--backgroud-fifth {
+    background-image: url(../../assets/images/navy-inear.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+  
+  &--backgroud-sixth {
+    background-image: url(../../assets/images/black-inear-lightning.svg);
+    background-repeat: no-repeat;
+    background-position: 130px bottom;
+  }
+}
+
+.product-container {
+  background-color: rgb(251, 252, 255);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

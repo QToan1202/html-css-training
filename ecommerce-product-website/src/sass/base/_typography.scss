@@ -1,0 +1,30 @@
+@font-face {
+  src: url('../../assets/fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+  font-family: 'Montserrat-400';
+}
+
+@font-face {
+  src: url('../../assets/fonts/Montserrat/static/Montserrat-Medium.ttf') format('truetype');
+  font-family: 'Montserrat-500';
+}
+
+@font-face {
+  src: url('../../assets/fonts/Montserrat/static/Montserrat-SemiBold.ttf') format('truetype');
+  font-family: 'Montserrat-600';
+}
+
+@font-face {
+  src: url('../../assets/fonts/Montserrat/static/Montserrat-Bold.ttf') format('truetype');
+  font-family: 'Montserrat-700';
+}
+
+$font-400: Montserrat-400;
+$font-500: Montserrat-500;
+$font-600: Montserrat-600;
+$font-700: Montserrat-700;
+
+
+
+body { 
+  font-family: $font-400, $font-500, $font-600, $font-700, sans-serif;
+}
