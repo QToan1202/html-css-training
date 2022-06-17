@@ -1,0 +1,6 @@
+@mixin card_item($url , $repeat: no-repeat, $position: center top) {
+  @content;
+  background-image: $url;
+  background-repeat: $repeat;
+  background-position: $position;
+}

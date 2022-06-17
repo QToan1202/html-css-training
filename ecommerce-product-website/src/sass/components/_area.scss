@@ -1,0 +1,41 @@
+.area {
+  display: flex;
+  position: relative;
+  box-sizing: content-box;
+
+  &--content-direction {
+    justify-content: flex-end;
+  }
+  
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  &__item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  &--reverse { 
+    flex-direction: row-reverse; 
+  }
+  
+  &--header-bg {
+    background-color: rgb(43, 40, 53);
+  }
+  
+  &--bg-product-beats {
+    background-color: rgb(255, 199, 0);
+    background-image: url(../assets/images/layer-section-2.svg);
+    background-repeat: no-repeat;
+  }
+  
+  &--bg-product-inear { 
+    background-color: rgb(244, 244, 244); 
+  }
+}
+
+

@@ -1,3 +1,5 @@
+@use '../utils/variables' as v;
+
 .btn {
   width: 170px;
   height: 41px;
@@ -5,7 +7,7 @@
   padding: 12px 48px;
   font-size: 14px;
   line-height: 17.07px;
-  font-family: var(--font-600);
+  font-family: v.$font-600;
   text-transform: uppercase;
   text-align: center;
   border-radius: 100px;
@@ -13,7 +15,7 @@
   cursor: pointer;
 
   &--warning {
-    color: rgb(0, 0, 0);
+    color: v.$black;
     background-color: rgb(255, 199, 0);
   } 
   
@@ -23,8 +25,8 @@
   }
   
   &--dark {
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
+    color: v.$white;
+    background-color: v.$black;
   }
   
   &--form {

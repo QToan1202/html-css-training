@@ -1,3 +1,5 @@
+@use '../utils/variables' as v;
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -13,10 +15,10 @@
     padding: 0px 49px;
 
     &--link {
-      color: rgb(255, 255, 255);
+      color: v.$white;
       padding: 5px 5px;
       font-size: 15px;
-      font-family: var(--font-500);
+      font-family: v.$font-500;
       line-height: 18.29px;
       text-transform: uppercase;
       text-decoration: none;

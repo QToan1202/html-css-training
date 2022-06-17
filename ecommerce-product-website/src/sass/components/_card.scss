@@ -1,3 +1,6 @@
+@use '../utils/variables' as v;
+@use '../utils/mixins';
+
 .card {
   max-width: 390px;
   box-sizing: content-box;
@@ -22,7 +25,7 @@
   &__price {
     display: inline-block;
     font-size: 25px;
-    font-family: var(--font-600);
+    font-family: v.$font-600;
     line-height: 30.48px;
     color: rgb(157, 130, 32);
 
@@ -32,39 +35,27 @@
   }
   
   &--backgroud-first {
-    background-image: url(../../assets/images/yellow-headphone.svg);
-    background-repeat: no-repeat;
-    background-position: center top;
+    @include card_item($url: url(../../assets/images/yellow-headphone.svg));
   }
   
   &--backgroud-second {
-    background-image: url(../../assets/images/black-inear.svg);
-    background-repeat: no-repeat;
-    background-position: center top;
+    @include card_item($url: url(../../assets/images/black-inear.svg));
   }
   
   &--backgroud-third {
-    background-image: url(../../assets/images/gray-headphone.svg);
-    background-repeat: no-repeat;
-    background-position: center top;
+    @include card_item($url: url(../../assets/images/gray-headphone.svg));
   }
   
   &--backgroud-fourth {
-    background-image: url(../../assets/images/gold-inear.svg);
-    background-repeat: no-repeat;
-    background-position: bottom center;
+    @include card_item($url: url(../../assets/images/gold-inear.svg), $position: bottom center);
   }
   
   &--backgroud-fifth {
-    background-image: url(../../assets/images/navy-inear.svg);
-    background-repeat: no-repeat;
-    background-position: center top;
+    @include card_item($url: url(../../assets/images/navy-inear.svg));
   }
   
   &--backgroud-sixth {
-    background-image: url(../../assets/images/black-inear-lightning.svg);
-    background-repeat: no-repeat;
-    background-position: 130px bottom;
+    @include card_item($url: url(../../assets/images/black-inear-lightning.svg), $position: 130px bottom);
   }
 }
 

@@ -1,3 +1,5 @@
+@use '../utils/variables' as v;
+
 .footer-container {
   background-color: rgb(43, 40, 53);
 }
@@ -26,15 +28,15 @@
   &__title { 
     text-transform: capitalize;
     text-decoration: none;
-    font-family: var(--font-600);
+    font-family: v.$font-600;
     font-size: 24px;
     line-height: 31px;
-    color: rgb(255, 255, 255);
+    color: v.$white;
   }
   
   &__item {
     color: rgb(184, 184, 184);
-    font-family: var(--font-500);
+    font-family: v.$font-500;
     font-size: 12px;
     line-height: 22px;
   

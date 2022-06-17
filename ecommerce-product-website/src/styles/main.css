@@ -48,7 +48,7 @@ body {
   position: relative;
 }
 
-.header-container {
+.header__container {
   box-sizing: border-box;
   padding-top: 13px;
   padding-left: 94px;

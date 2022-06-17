@@ -1,0 +1,17 @@
+@use '../utils/variables' as v;
+
+.header {
+  width: 100%;
+  position: relative;
+
+  &__container {
+    box-sizing: border-box;
+    padding-top: 13px;
+    padding-left: 94px;
+    padding-bottom: 10px;
+    position: fixed;
+    z-index: 2;
+    max-width: v.$max-width;
+    background-color: v.$header-bg;
+  }
+}
