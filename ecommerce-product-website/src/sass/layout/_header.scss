@@ -1,10 +1,11 @@
-@use '../utils/variables' as v;
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
 
 .header {
   width: 100%;
   position: relative;
 
-  &__container {
+  &--container {
     box-sizing: border-box;
     padding-top: 13px;
     padding-left: 94px;
@@ -13,5 +14,13 @@
     z-index: 2;
     max-width: v.$max-width;
     background-color: v.$header-bg;
+
+    @include m.mediaQuery(v.$large) {
+      @include m.spacing_section($left: 6vw, $right: 6vw);
+    }
+
+    @include m.mediaQuery(v.$medium) {
+      background-color: transparent;
+    }
   }
 }

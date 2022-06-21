@@ -1,4 +1,5 @@
-@use '../utils/variables' as v;
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
 
 .navbar {
   display: flex;
@@ -24,12 +25,20 @@
       text-decoration: none;
       letter-spacing: 1.91px;
     }
+
+    @include m.mediaQuery(v.$large) {
+      padding: 0 3vw;
+    }
+
   }
-  
   
   &--spacing {
     padding-top: 14px;
     padding-left: 60px;
+
+    @include m.mediaQuery(v.$large) {
+      padding-left: 1vw;
+    }
   }
   
   &__icon { 
@@ -43,6 +52,14 @@
   
   &__icon--padding {
     padding: 5px 5px;
+  }
+
+  @include m.mediaQuery(v.$large) {
+    padding-left: 0.5vw;
+  }
+
+  @include m.mediaQuery(v.$medium) {
+    display: none;
   }
 }
 

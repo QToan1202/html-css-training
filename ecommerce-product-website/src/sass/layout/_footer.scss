@@ -1,4 +1,5 @@
-@use '../utils/variables' as v;
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
 
 .footer-container {
   background-color: rgb(43, 40, 53);
@@ -12,6 +13,13 @@
 
   &--flex {
     display: flex;
+
+    @include m.mediaQuery(v.$large) {
+      justify-content: center;
+    }
+    @include m.mediaQuery(v.$small) {
+      flex-direction: column;
+    }
   }
   
   &__list {
@@ -19,10 +27,32 @@
     padding-left: 34px;
     margin: 0px 44px;
     list-style-type: none;
+    
+    @include m.mediaQuery(v.$medium) {
+      margin: 0px 0px;
+    }
+    @include m.mediaQuery(v.$small) {
+      margin: 0;
+      padding: 25px 13px;
+      border-bottom: 1px solid v.$black;
+    }
+    
+    &--decorate {
+      @include m.mediaQuery(v.$small) {
+        border-bottom: none;
+      }
+    }
+
   }
   
   &__logo {
     padding-bottom: 80px;
+
+    @include m.mediaQuery(v.$small) {
+      @include m.spacing_section($top: 30px, $bottom: 25px);
+      max-width: 50px;
+      align-self: center;
+    }
   }
   
   &__title { 
@@ -55,6 +85,16 @@
     &--link {
       text-decoration: none;
       text-transform: uppercase;
+
+      @include m.mediaQuery(v.$small) {
+        display: none;
+      }
+    }
+
+    &--state {
+      @include m.mediaQuery(v.$small) {
+        display: block;
+      }
     }
   }
 }

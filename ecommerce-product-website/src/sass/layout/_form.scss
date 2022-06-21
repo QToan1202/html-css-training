@@ -1,4 +1,5 @@
-@use '../utils/variables';
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
 
 .form {
   margin: 33px auto 88.19px auto;
@@ -21,6 +22,12 @@
   
   &__subtitle--bottom {
     margin-bottom: 47px;
+    
+    @include m.mediaQuery(v.$small) {
+      text-align: center;
+      margin: 0 34px;
+      margin-bottom: 30px;
+    }
   }
   
   &__input {
@@ -35,6 +42,13 @@
       font-family: v.$font-400;
       font-size: 14px;
       line-height: 17.07px;
+    }
+
+    @include m.mediaQuery(v.$medium) {
+      width: 50vw;
+    }
+    @include m.mediaQuery(v.$small) {
+      min-width: 298px;
     }
   }
 }

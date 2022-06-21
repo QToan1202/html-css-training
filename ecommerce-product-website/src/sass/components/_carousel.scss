@@ -1,0 +1,28 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.carousel {
+  position: absolute;
+  bottom: 170px;
+  right: 343px;
+
+  &__item {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0px 5px;
+
+    &--dark { 
+      background-color: v.$black; 
+    }
+    
+    &--muted { 
+      background-color: rgb(209, 209, 209); 
+    }
+  }
+
+  @include m.mediaQuery(v.$medium) {
+    display: none;
+  }
+}

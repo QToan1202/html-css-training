@@ -1,4 +1,5 @@
-@use '../utils/variables' as v;
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
 
 
 body { 
@@ -19,6 +20,10 @@ body {
     font-family: v.$font-500;
     letter-spacing: 1px;
     color: v.$white;
+
+    @include m.mediaQuery(v.$small) {
+      color: v.$black;
+    }
   }
 }
 
@@ -51,14 +56,33 @@ body {
     font-size: 40px;
     line-height: 43px;
     color: v.$white;
+
+    @include m.mediaQuery(v.$small) {
+      font-size: 32px;
+      color: v.$black;
+    }
   }
   
   &--card { 
     font-family: v.$font-500;
+    
+    @include m.mediaQuery(v.$small) {
+      font-size: 40px;
+    }
   }
   
   &--uppercase { 
     text-transform: uppercase; 
+  }
+
+  @include m.mediaQuery(v.$large) {
+    font-size: 40px;
+  }
+  @include m.mediaQuery(v.$medium) {
+    font-size: 35px;
+  }
+  @include m.mediaQuery(v.$small) {
+    font-size: 32px;
   }
 }
 
@@ -82,6 +106,10 @@ body {
   &--light {  
     color: rgb(242, 242, 242); 
   }
+  
+  @include m.mediaQuery(v.$small) {
+    color: v.$black;
+  }
 }
 
 .promo {
@@ -91,6 +119,10 @@ body {
 
   &--warning {
     color: rgb(255, 199, 0); 
+
+    @include m.mediaQuery(v.$small) {
+      color: v.$black;
+    }
   }
   
   &--dark { 

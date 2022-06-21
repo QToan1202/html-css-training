@@ -48,7 +48,7 @@ body {
   position: relative;
 }
 
-.header__container {
+.header--container {
   box-sizing: border-box;
   padding-top: 13px;
   padding-left: 94px;
@@ -680,7 +680,7 @@ body {
     padding-right: 4vw;
   }
 
-  .header-container {
+  .header--container {
     padding-left: 6vw;
     padding-right: 6vw;
 }
@@ -766,7 +766,7 @@ body {
     width: 50vw;
   }
 
-  .header-container {
+  .header--container {
     background-color: transparent;
   }
 
