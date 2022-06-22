@@ -79,7 +79,7 @@
   @include m.spacing_section($top: 47px);
 
   @include m.mediaQuery(v.$medium) {
-    @include m.img($width: 60vw)
+    @include m.img($width: 57vw)
   }
   @include m.mediaQuery(v.$small) {
     @include m.img;
@@ -91,7 +91,7 @@
   @include m.spacing_section($bottom: 28px);
 
   @include m.mediaQuery(v.$medium) {
-    @include m.img($width: 60vw)
+    @include m.img($width: 57vw)
   }
   @include m.mediaQuery(v.$small) {
     @include m.img;
@@ -102,7 +102,7 @@
   @include m.spacing_section($bottom: 29px);
 
   @include m.mediaQuery(v.$medium) {
-    @include m.img($width: 60vw);
+    @include m.img($width: 57vw);
   }
   @include m.mediaQuery(v.$small) {
     @include m.img;

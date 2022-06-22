@@ -35,27 +35,27 @@
   }
   
   &--backgroud-first {
-    @include m.card_item($url: url(../../assets/images/yellow-headphone.svg));
+    @include m.card_item($url: url(../assets/images/yellow-headphone.svg));
   }
   
   &--backgroud-second {
-    @include m.card_item($url: url(../../assets/images/black-inear.svg));
+    @include m.card_item($url: url(../assets/images/black-inear.svg));
   }
   
   &--backgroud-third {
-    @include m.card_item($url: url(../../assets/images/gray-headphone.svg));
+    @include m.card_item($url: url(../assets/images/gray-headphone.svg));
   }
   
   &--backgroud-fourth {
-    @include m.card_item($url: url(../../assets/images/gold-inear.svg), $position: bottom center);
+    @include m.card_item($url: url(../assets/images/gold-inear.svg), $position: bottom center);
   }
   
   &--backgroud-fifth {
-    @include m.card_item($url: url(../../assets/images/navy-inear.svg));
+    @include m.card_item($url: url(../assets/images/navy-inear.svg));
   }
   
   &--backgroud-sixth {
-    @include m.card_item($url: url(../../assets/images/black-inear-lightning.svg), $position: 130px bottom);
+    @include m.card_item($url: url(../assets/images/black-inear-lightning.svg), $position: 130px bottom);
   }
 }
 
