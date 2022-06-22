@@ -23,11 +23,7 @@ Ecommerce Product Website
 
 ## Target
 
-* Apply HTML Inspector
-* CSS rules
-* BEM naming convention
-* Use HTML tags sensibly
-* Know how to use Flexbox
+* Apply SASS
 * Practice making a responsive website
 * Using media queries for mobile/tablet devices
 
