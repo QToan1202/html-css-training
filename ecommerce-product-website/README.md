@@ -31,7 +31,7 @@ Ecommerce Product Website
 
 Open Windows PowerShell or cmd or [Windows Terminal](https://www.microsoft.com/en-gb/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=pivot:overviewtab) 
 
-**_Step 1:_** Clone feature/practice-1 branch
+**_Step 1:_** Clone feature/practice-2 branch
 
 ```
 git clone --single-branch --branch feature/practice-2 git@github.com:QToan1202/html-css-training.git
