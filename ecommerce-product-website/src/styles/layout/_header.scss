@@ -10,8 +10,8 @@
     padding-top: 13px;
     padding-left: 94px;
     padding-bottom: 10px;
-    position: fixed;
-    z-index: 2;
+    position: absolute;
+    z-index: v.$nav-index;
     max-width: v.$max-width;
     background-color: v.$header-bg;
 
@@ -20,7 +20,6 @@
     }
 
     @include m.mediaQuery(v.$medium) {
-      position: absolute;
       background-color: transparent;
     }
   }

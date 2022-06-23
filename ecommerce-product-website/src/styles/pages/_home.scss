@@ -9,6 +9,10 @@
   width: 100%;
 }
 
+.group { 
+  display: flex; 
+}
+
 .pd-product-speaker {
   @include m.spacing_section($left: 93px, $right: 54px);
 

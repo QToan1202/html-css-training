@@ -1,10 +1,6 @@
 @use '../abstracts/variables' as v;
 @use '../abstracts/mixins' as m;
 
-.group { 
-  display: flex; 
-}
-
 .collapse-icon {
   display: none;
 

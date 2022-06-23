@@ -3,12 +3,11 @@
 
 
 body { 
-  font-family: v.$font-400, v.$font-500, v.$font-600, v.$font-700, sans-serif;
+  font-family: v.$font-400, sans-serif;
 }
 
 .upper-title {
   font-size: 16px;
-  font-family: v.$font-400;
   line-height: 19.5px;
   color: rgb(43, 40, 53);
 
@@ -31,8 +30,7 @@ body {
 
 .sub-title {
   font-size: 14px;
-  font-family: v.$font-400;
-  line-height: 17.07px;
+  line-height: 17px;
   color: v.$black;
 
   &--font {
@@ -45,7 +43,7 @@ body {
 
 
 .title {
-  margin: 7px -2.56px;
+  margin: 7px 0;
   font-family: v.$font-700;
   font-size: 50px;
   line-height: 55px;
@@ -92,7 +90,6 @@ body {
   margin-top: 24px;
   margin-bottom: 43px;
   font-size: 14px;
-  font-family: v.$font-400;
   line-height: 27.01px;
   color: v.$black;
 }
@@ -100,7 +97,6 @@ body {
 .price {
   margin-top: 27px;
   font-size: 40px;
-  font-family: v.$font-400;
   line-height: 48.76px;
 
   &--light {  
