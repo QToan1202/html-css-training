@@ -1,4 +1,5 @@
-@use '../abstracts/variables' as v;
+@use '../abstracts/colors' as color;
+
 
 .dot__item {
   margin: 30px 4px 22px 8px;
@@ -6,13 +7,13 @@
   width: 37px;
   border-radius: 50%;
   display: inline-block;
-  border: 1px solid rgb(234, 234, 234);
+  border: 1px solid color.$green-white;
   box-sizing: border-box;
   box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.14);
   position: relative;
 
   &--light { 
-    background-color: v.$white; 
+    background-color: color.$white; 
   }
   
   &--light::after {
@@ -20,17 +21,17 @@
     height: 44px;
     width: 44px;
     border-radius: 50%;
-    border: 1px solid v.$black;
+    border: 1px solid color.$black;
     position: absolute;
     top: -5px;
     left: -6px
   }
   
   &--danger { 
-    background-color: rgb(221, 86, 86); 
+    background-color: color.$pastel-red; 
   }
   
   &--dark { 
-    background-color: v.$black; 
+    background-color: color.$black; 
   }
 }

@@ -1,9 +1,19 @@
-@use '../abstracts/variables' as v;
-@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mixin;
+@use '../abstracts/colors' as color;
+
 
 .navbar {
   display: flex;
   justify-content: space-between;
+}
+
+.collapse-icon {
+  display: none;
+
+  @include mixin.mediaQuery(var.$medium) {
+    display: inline-flex;
+  }
 }
 
 .list { 
@@ -16,18 +26,18 @@
     padding: 0px 49px;
 
     &--link {
-      color: v.$white;
+      color: color.$white;
       padding: 5px 5px;
       font-size: 15px;
-      font-family: v.$font-500;
-      line-height: 18.29px;
+      font-family: var.$font-500;
+      line-height: 18px;
       text-transform: uppercase;
       text-decoration: none;
-      letter-spacing: 1.91px;
+      letter-spacing: 2px;
     }
 
-    @include m.mediaQuery(v.$large) {
-      padding: 0 3vw;
+    @include mixin.mediaQuery(var.$large) {
+      padding: 0 45px;
     }
 
   }
@@ -35,10 +45,6 @@
   &--spacing {
     padding-top: 14px;
     padding-left: 60px;
-
-    @include m.mediaQuery(v.$large) {
-      padding-left: 1vw;
-    }
   }
   
   &__icon { 
@@ -54,11 +60,11 @@
     padding: 5px 5px;
   }
 
-  @include m.mediaQuery(v.$large) {
-    padding-left: 0.5vw;
+  @include mixin.mediaQuery(var.$large) {
+    padding-left: 10px;
   }
 
-  @include m.mediaQuery(v.$medium) {
+  @include mixin.mediaQuery(var.$medium) {
     display: none;
   }
 }

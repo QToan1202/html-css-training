@@ -1,5 +1,6 @@
-@use '../abstracts/variables' as v;
-@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mixin;
+@use '../abstracts/colors' as color;
 
 .carousel {
   position: absolute;
@@ -14,15 +15,15 @@
     margin: 0px 5px;
 
     &--dark { 
-      background-color: v.$black; 
+      background-color: color.$black; 
     }
     
     &--muted { 
-      background-color: rgb(209, 209, 209); 
+      background-color: color.$grey-goose; 
     }
   }
 
-  @include m.mediaQuery(v.$medium) {
+  @include mixin.mediaQuery(var.$medium) {
     display: none;
   }
 }

@@ -1,5 +1,6 @@
-@use '../abstracts/variables' as v;
-@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mixin;
+@use '../abstracts/colors' as color;
 
 .btn {
   width: 170px;
@@ -7,31 +8,36 @@
   margin: 30px auto 17px 20px;
   padding: 12px 48px;
   font-size: 14px;
-  line-height: 17.07px;
-  font-family: v.$font-600;
+  line-height: 17px;
+  font-family: var.$font-600;
   text-transform: uppercase;
   text-align: center;
   border-radius: 100px;
   border: none;
   cursor: pointer;
 
+  @include mixin.mediaQuery(var.$medium) {
+    width: 150px;
+    padding: 0;
+  }
+
   &--warning {
-    color: v.$black;
-    background-color: v.$btn-warning;
+    color: color.$black;
+    background-color: color.$supernova;
   } 
   
   &--header {
     margin-left: 35px;
     margin-bottom: 11px;
 
-    @include m.mediaQuery(v.$small) {
+    @include mixin.mediaQuery(var.$small) {
       margin-left: 20px;
     }
   }
   
   &--dark {
-    color: v.$white;
-    background-color: v.$black;
+    color: color.$white;
+    background-color: color.$black;
   }
   
   &--form {
@@ -39,24 +45,19 @@
     width: 507px;
     height: 41px;
 
-    @include m.mediaQuery(v.$medium) {
-      width: 50vw;
+    @include mixin.mediaQuery(var.$medium) {
+      width: 500px;
     }
-    @include m.mediaQuery(v.$small) {
-      min-width: 298px;
+    @include mixin.mediaQuery(var.$small) {
+      width: 300px;
     }
   }
   
-  &--card { 
-    z-index: 1;
+  &--card {
     margin: 15px 19px;
     padding: 12px 30px;
     width: 145px;
   }
 
-  @include m.mediaQuery(v.$medium) {
-    width: 150px;
-    padding: 0;
-  }
 }
 

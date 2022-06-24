@@ -1,5 +1,6 @@
-@use '../abstracts/variables' as v;
-@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mixin;
+@use '../abstracts/colors' as color;
 
 .header {
   width: 100%;
@@ -11,15 +12,15 @@
     padding-left: 94px;
     padding-bottom: 10px;
     position: absolute;
-    z-index: v.$nav-index;
-    max-width: v.$max-width;
-    background-color: v.$header-bg;
+    z-index: var.$nav-index;
+    max-width: var.$max-width;
+    background-color: color.$mirage;
 
-    @include m.mediaQuery(v.$large) {
-      @include m.spacing_section($left: 6vw, $right: 6vw);
+    @include mixin.mediaQuery(var.$large) {
+      @include mixin.spacing_section($left: 20px, $right: 20px, $top: 10px, $bottom: 10px);
     }
 
-    @include m.mediaQuery(v.$medium) {
+    @include mixin.mediaQuery(var.$medium) {
       background-color: transparent;
     }
   }

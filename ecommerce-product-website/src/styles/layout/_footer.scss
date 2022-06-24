@@ -1,8 +1,10 @@
-@use '../abstracts/variables' as v;
-@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mixin;
+@use '../abstracts/colors' as color;
+
 
 .footer-container {
-  background-color: rgb(43, 40, 53);
+  background-color: color.$baltic-sea;
 }
 
 .footer {
@@ -14,10 +16,10 @@
   &--flex {
     display: flex;
 
-    @include m.mediaQuery(v.$large) {
+    @include mixin.mediaQuery(var.$large) {
       justify-content: center;
     }
-    @include m.mediaQuery(v.$small) {
+    @include mixin.mediaQuery(var.$small) {
       flex-direction: column;
     }
   }
@@ -28,17 +30,17 @@
     margin: 0px 44px;
     list-style-type: none;
     
-    @include m.mediaQuery(v.$medium) {
+    @include mixin.mediaQuery(var.$medium) {
       margin: 0px 0px;
     }
-    @include m.mediaQuery(v.$small) {
+    @include mixin.mediaQuery(var.$small) {
       margin: 0;
       padding: 25px 13px;
-      border-bottom: 1px solid v.$black;
+      border-bottom: 1px solid color.$black;
     }
     
     &--decorate {
-      @include m.mediaQuery(v.$small) {
+      @include mixin.mediaQuery(var.$small) {
         border-bottom: none;
       }
     }
@@ -48,8 +50,8 @@
   &__logo {
     padding-bottom: 80px;
 
-    @include m.mediaQuery(v.$small) {
-      @include m.spacing_section($top: 30px, $bottom: 25px);
+    @include mixin.mediaQuery(var.$small) {
+      @include mixin.spacing_section($top: 30px, $bottom: 25px);
       max-width: 50px;
       align-self: center;
     }
@@ -58,15 +60,15 @@
   &__title { 
     text-transform: capitalize;
     text-decoration: none;
-    font-family: v.$font-600;
+    font-family: var.$font-600;
     font-size: 24px;
     line-height: 31px;
-    color: v.$white;
+    color: color.$white;
   }
   
   &__item {
-    color: rgb(184, 184, 184);
-    font-family: v.$font-500;
+    color: color.$pink-swan;
+    font-family: var.$font-500;
     font-size: 12px;
     line-height: 22px;
   
@@ -86,13 +88,13 @@
       text-decoration: none;
       text-transform: uppercase;
 
-      @include m.mediaQuery(v.$small) {
+      @include mixin.mediaQuery(var.$small) {
         display: none;
       }
     }
 
     &--state {
-      @include m.mediaQuery(v.$small) {
+      @include mixin.mediaQuery(var.$small) {
         display: block;
       }
     }

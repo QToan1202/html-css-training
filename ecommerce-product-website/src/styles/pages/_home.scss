@@ -1,11 +1,11 @@
-@use '../abstracts/variables' as v;
-@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mixin;
 
 
 .wrapper {
   margin: 0 auto;
-  max-width: v.$max-width;
-  min-width: v.$min-width;
+  max-width: var.$max-width;
+  min-width: var.$min-width;
   width: 100%;
 }
 
@@ -14,110 +14,110 @@
 }
 
 .pd-product-speaker {
-  @include m.spacing_section($left: 93px, $right: 54px);
+  @include mixin.spacing_section($left: 93px, $right: 54px);
 
-  @include m.mediaQuery(v.$large) {
-    @include m.spacing_section($left: 4vw, $right: 4vw);
+  @include mixin.mediaQuery(var.$large) {
+    @include mixin.spacing_section($left: 50px, $right: 50px);
   }
-  @include m.mediaQuery(v.$medium) {
-    @include m.spacing_section($left: 2vw, $right: 1vw);
+  @include mixin.mediaQuery(var.$medium) {
+    @include mixin.spacing_section($left: 20px, $right: 10px);
   }
 }
 
 .pd-product-beats {
-  @include m.spacing_section($left: 49px, $right: 145px);
+  @include mixin.spacing_section($left: 49px, $right: 145px);
 
-  @include m.mediaQuery(v.$large) {
-    @include m.spacing_section($left: 4vw, $right: 4vw);
+  @include mixin.mediaQuery(var.$large) {
+    @include mixin.spacing_section($left: 50px, $right: 50px);
   }
-  @include m.mediaQuery(v.$medium) {
-    @include m.spacing_section($left: 2vw, $right: 1vw);
+  @include mixin.mediaQuery(var.$medium) {
+    @include mixin.spacing_section($left: 20px, $right: 10px);
   }
 }
 
 .pd-product-inear {
-  @include m.spacing_section($left: 93px, $right: 25px);
+  @include mixin.spacing_section($left: 93px, $right: 25px);
 
-  @include m.mediaQuery(v.$large) {
-    @include m.spacing_section($left: 4vw, $right: 4vw);
+  @include mixin.mediaQuery(var.$large) {
+    @include mixin.spacing_section($left: 50px, $right: 50px);
   }
-  @include m.mediaQuery(v.$medium) {
-    @include m.spacing_section($left: 2vw, $right: 1vw);
+  @include mixin.mediaQuery(var.$medium) {
+    @include mixin.spacing_section($left: 20px, $right: 10px);
   }
 }
 
 .pd-content-product-speaker {
-  @include m.spacing_section($top: 225px, $bottom: 230px);
+  @include mixin.spacing_section($top: 225px, $bottom: 230px);
 
-  @include m.mediaQuery(v.$medium) {
-    @include m.spacing_section($top: 160px, $bottom: 90px);
+  @include mixin.mediaQuery(var.$medium) {
+    @include mixin.spacing_section($top: 160px, $bottom: 90px);
   }
-  @include m.mediaQuery(v.$small) {
-    @include m.spacing_section($top: 0, $bottom: 91px);
+  @include mixin.mediaQuery(var.$small) {
+    @include mixin.spacing_section($top: 0, $bottom: 91px);
   }
 }
 
 .pd-content-product-beats {
-  @include m.spacing_section($left: 35px, $top: 235px, $bottom: 245px);
+  @include mixin.spacing_section($left: 35px, $top: 235px, $bottom: 245px);
 
-  @include m.mediaQuery(v.$medium) {
-    @include m.spacing_section($top: 120px, $bottom: 70px);
+  @include mixin.mediaQuery(var.$medium) {
+    @include mixin.spacing_section($top: 120px, $bottom: 70px);
   }
-  @include m.mediaQuery(v.$small) {
-    @include m.spacing_section($top: 0, $bottom: 35px, $left: 0);
+  @include mixin.mediaQuery(var.$small) {
+    @include mixin.spacing_section($top: 0, $bottom: 35px, $left: 0);
   }
 }
 
 .pd-content-product-inear {
-  @include m.spacing_section($top: 206px, $bottom: 294px);
+  @include mixin.spacing_section($top: 206px, $bottom: 294px);
 
-  @include m.mediaQuery(v.$medium) {
-    @include m.spacing_section($top: 100px, $bottom: 110px);
+  @include mixin.mediaQuery(var.$medium) {
+    @include mixin.spacing_section($top: 100px, $bottom: 110px);
   }
-  @include m.mediaQuery(v.$small) {
-    @include m.spacing_section($top: 40px, $bottom: 55px);
+  @include mixin.mediaQuery(var.$small) {
+    @include mixin.spacing_section($top: 40px, $bottom: 55px);
   }
 }
 
 .pd-img-product-speaker {
-  @include m.spacing_section($top: 47px);
+  @include mixin.spacing_section($top: 47px);
 
-  @include m.mediaQuery(v.$medium) {
-    @include m.img($width: 57vw)
+  @include mixin.mediaQuery(var.$medium) {
+    @include mixin.img($width: 57vw)
   }
-  @include m.mediaQuery(v.$small) {
-    @include m.img;
-    @include m.spacing_section($top: 0);
+  @include mixin.mediaQuery(var.$small) {
+    @include mixin.img;
+    @include mixin.spacing_section($top: 0);
   }
 }
 
 .pd-img-product-beats {
-  @include m.spacing_section($bottom: 28px);
+  @include mixin.spacing_section($bottom: 28px);
 
-  @include m.mediaQuery(v.$medium) {
-    @include m.img($width: 57vw)
+  @include mixin.mediaQuery(var.$medium) {
+    @include mixin.img($width: 57vw)
   }
-  @include m.mediaQuery(v.$small) {
-    @include m.img;
+  @include mixin.mediaQuery(var.$small) {
+    @include mixin.img;
   }
 }
 
 .pd-img-product-inear {
-  @include m.spacing_section($bottom: 29px);
+  @include mixin.spacing_section($bottom: 29px);
 
-  @include m.mediaQuery(v.$medium) {
-    @include m.img($width: 57vw);
+  @include mixin.mediaQuery(var.$medium) {
+    @include mixin.img($width: 57vw);
   }
-  @include m.mediaQuery(v.$small) {
-    @include m.img;
-    @include m.spacing_section($top: 40px);
+  @include mixin.mediaQuery(var.$small) {
+    @include mixin.img;
+    @include mixin.spacing_section($top: 40px);
   }
 }
 
 .pd-footer {
-  @include m.spacing_section($left: 135px, $right: 93px);
-  @include m.mediaQuery(v.$large) {
-    @include m.spacing_section($left: 1vw, $right: 1vw);
+  @include mixin.spacing_section($left: 135px, $right: 93px);
+  @include mixin.mediaQuery(var.$large) {
+    @include mixin.spacing_section($left: 5px, $right: 5px);
   }
   
 }

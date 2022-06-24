@@ -1,9 +1,11 @@
-@use '../abstracts/variables' as v;
-@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mixin;
+@use '../abstracts/colors' as color;
+
 
 .form {
-  margin: 33px auto 88.19px auto;
-  background-color: rgb(248, 248, 249);
+  margin: 33px auto 88px auto;
+  background-color: color.$desert-storm;
   max-width: 1252px;
   width: 100%;
 
@@ -23,7 +25,7 @@
   &__subtitle--bottom {
     margin-bottom: 47px;
     
-    @include m.mediaQuery(v.$small) {
+    @include mixin.mediaQuery(var.$small) {
       text-align: center;
       margin: 0 34px;
       margin-bottom: 30px;
@@ -32,23 +34,22 @@
   
   &__input {
     margin-bottom: 15px;
-    border: 1px solid #BFBFBF;
+    border: 1px solid color.$pale-slate;
     border-radius: 18px;
     width: 507px;
     height: 36px;
 
     &::placeholder {
       padding-left: 20px;
-      font-family: v.$font-400;
       font-size: 14px;
-      line-height: 17.07px;
+      line-height: 17px;
     }
 
-    @include m.mediaQuery(v.$medium) {
-      width: 50vw;
+    @include mixin.mediaQuery(var.$medium) {
+      width: 500px;
     }
-    @include m.mediaQuery(v.$small) {
-      min-width: 298px;
+    @include mixin.mediaQuery(var.$small) {
+      width: 300px;
     }
   }
 }

@@ -1,5 +1,6 @@
-@use '../abstracts/variables' as v;
-@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mixin;
+@use '../abstracts/colors' as color;
 
 .area {
   display: flex;
@@ -15,20 +16,20 @@
     top: 0;
     left: 0;
 
-    @include m.mediaQuery(v.$large) {
+    @include mixin.mediaQuery(var.$large) {
       left: -50px;
     }
 
-    @include m.mediaQuery(v.$medium) {
-      @include m.img($width: 60vw) {
+    @include mixin.mediaQuery(var.$medium) {
+      @include mixin.img($width: 57vw) {
         left: 0;
       }
     }
     
-    @include m.mediaQuery(v.$small) {
-      @include m.img;
+    @include mixin.mediaQuery(var.$small) {
+      @include mixin.img;
       position: relative;
-      background-color:rgb(43, 40, 53);
+      background-color: color.$baltic-sea;
     }
   }
   
@@ -43,24 +44,24 @@
   }
   
   &--header-bg {
-    background-color: rgb(43, 40, 53);
+    background-color: color.$baltic-sea;
 
-    @include m.mediaQuery(v.$small) {
+    @include mixin.mediaQuery(var.$small) {
       background-color: transparent;
     }
   }
   
   &--bg-product-beats {
-    background-color: rgb(255, 199, 0);
+    background-color: color.$supernova;
     background-image: url(../assets/images/layer-section-2.svg);
     background-repeat: no-repeat;
   }
   
   &--bg-product-inear { 
-    background-color: rgb(244, 244, 244); 
+    background-color: color.$white-smoke; 
   }
 
-  @include m.mediaQuery(v.$small) {
+  @include mixin.mediaQuery(var.$small) {
     flex-direction: column;
   }
 }

@@ -1,32 +1,33 @@
-@use '../abstracts/variables' as v;
-@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mixin;
+
 
 .content {
   flex-grow: 1;
 
   &--header {
     flex-grow: 0;
-    @include m.spacing_section($top: 200px, $right: 142px, $bottom: 183px);
+    @include mixin.spacing_section($top: 200px, $right: 142px, $bottom: 183px);
 
-    @include m.mediaQuery(v.$large) {
-      padding-right: 2.5vw;
+    @include mixin.mediaQuery(var.$large) {
+      padding-right: 60px;
     }
 
-    @include m.mediaQuery(v.$medium) {
-      @include m.spacing_section($top: 140px, $bottom: 145px);
+    @include mixin.mediaQuery(var.$medium) {
+      @include mixin.spacing_section($top: 140px, $bottom: 80px);
     }
 
-    @include m.mediaQuery(v.$small) {
-      @include m.spacing_section($top: 18px, $bottom: 21px, $left: 19px);
+    @include mixin.mediaQuery(var.$small) {
+      @include mixin.spacing_section($top: 18px, $bottom: 21px, $left: 19px);
     }
   }
   
   &--card {
     flex-grow: 0;
-    @include m.spacing_section(325px, 68px, 16px, 49px);
+    @include mixin.spacing_section(325px, 68px, 16px, 49px);
 
-    @include m.mediaQuery(v.$small) {
-      @include m.spacing_section(357px, 50px, 32px, 25px);
+    @include mixin.mediaQuery(var.$small) {
+      @include mixin.spacing_section(357px, 50px, 32px, 25px);
     }
   }
 }
