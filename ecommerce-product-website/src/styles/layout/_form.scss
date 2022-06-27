@@ -25,7 +25,7 @@
   &__subtitle--bottom {
     margin-bottom: 47px;
     
-    @include mixin.mediaQuery(var.$small) {
+    @include mixin.mediaQuery(var.$mobile) {
       text-align: center;
       margin: 0 34px;
       margin-bottom: 30px;
@@ -45,10 +45,10 @@
       line-height: 17px;
     }
 
-    @include mixin.mediaQuery(var.$medium) {
+    @include mixin.mediaQuery(var.$tablet) {
       width: 500px;
     }
-    @include mixin.mediaQuery(var.$small) {
+    @include mixin.mediaQuery(var.$mobile) {
       width: 300px;
     }
   }

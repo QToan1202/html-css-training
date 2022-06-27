@@ -11,7 +11,7 @@
 .collapse-icon {
   display: none;
 
-  @include mixin.mediaQuery(var.$medium) {
+  @include mixin.mediaQuery(var.$tablet) {
     display: inline-flex;
   }
 }
@@ -36,7 +36,7 @@
       letter-spacing: 2px;
     }
 
-    @include mixin.mediaQuery(var.$large) {
+    @include mixin.mediaQuery(var.$desktop) {
       padding: 0 45px;
     }
 
@@ -60,11 +60,11 @@
     padding: 5px 5px;
   }
 
-  @include mixin.mediaQuery(var.$large) {
+  @include mixin.mediaQuery(var.$desktop) {
     padding-left: 10px;
   }
 
-  @include mixin.mediaQuery(var.$medium) {
+  @include mixin.mediaQuery(var.$tablet) {
     display: none;
   }
 }

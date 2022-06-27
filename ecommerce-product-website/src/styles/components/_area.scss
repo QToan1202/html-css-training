@@ -16,17 +16,17 @@
     top: 0;
     left: 0;
 
-    @include mixin.mediaQuery(var.$large) {
+    @include mixin.mediaQuery(var.$desktop) {
       left: -50px;
     }
 
-    @include mixin.mediaQuery(var.$medium) {
+    @include mixin.mediaQuery(var.$tablet) {
       @include mixin.img($width: 57vw) {
         left: 0;
       }
     }
     
-    @include mixin.mediaQuery(var.$small) {
+    @include mixin.mediaQuery(var.$mobile) {
       @include mixin.img;
       position: relative;
       background-color: color.$baltic-sea;
@@ -46,7 +46,7 @@
   &--header-bg {
     background-color: color.$baltic-sea;
 
-    @include mixin.mediaQuery(var.$small) {
+    @include mixin.mediaQuery(var.$mobile) {
       background-color: transparent;
     }
   }
@@ -61,7 +61,7 @@
     background-color: color.$white-smoke; 
   }
 
-  @include mixin.mediaQuery(var.$small) {
+  @include mixin.mediaQuery(var.$mobile) {
     flex-direction: column;
   }
 }

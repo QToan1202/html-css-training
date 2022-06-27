@@ -9,15 +9,15 @@
     flex-grow: 0;
     @include mixin.spacing_section($top: 200px, $right: 142px, $bottom: 183px);
 
-    @include mixin.mediaQuery(var.$large) {
+    @include mixin.mediaQuery(var.$desktop) {
       padding-right: 60px;
     }
 
-    @include mixin.mediaQuery(var.$medium) {
+    @include mixin.mediaQuery(var.$tablet) {
       @include mixin.spacing_section($top: 140px, $bottom: 80px);
     }
 
-    @include mixin.mediaQuery(var.$small) {
+    @include mixin.mediaQuery(var.$mobile) {
       @include mixin.spacing_section($top: 18px, $bottom: 21px, $left: 19px);
     }
   }
@@ -26,7 +26,7 @@
     flex-grow: 0;
     @include mixin.spacing_section(325px, 68px, 16px, 49px);
 
-    @include mixin.mediaQuery(var.$small) {
+    @include mixin.mediaQuery(var.$mobile) {
       @include mixin.spacing_section(357px, 50px, 32px, 25px);
     }
   }

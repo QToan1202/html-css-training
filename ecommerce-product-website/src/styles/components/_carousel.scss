@@ -23,7 +23,7 @@
     }
   }
 
-  @include mixin.mediaQuery(var.$medium) {
+  @include mixin.mediaQuery(var.$tablet) {
     display: none;
   }
 }

@@ -16,10 +16,10 @@
 .pd-product-speaker {
   @include mixin.spacing_section($left: 93px, $right: 54px);
 
-  @include mixin.mediaQuery(var.$large) {
+  @include mixin.mediaQuery(var.$desktop) {
     @include mixin.spacing_section($left: 50px, $right: 50px);
   }
-  @include mixin.mediaQuery(var.$medium) {
+  @include mixin.mediaQuery(var.$tablet) {
     @include mixin.spacing_section($left: 20px, $right: 10px);
   }
 }
@@ -27,10 +27,10 @@
 .pd-product-beats {
   @include mixin.spacing_section($left: 49px, $right: 145px);
 
-  @include mixin.mediaQuery(var.$large) {
+  @include mixin.mediaQuery(var.$desktop) {
     @include mixin.spacing_section($left: 50px, $right: 50px);
   }
-  @include mixin.mediaQuery(var.$medium) {
+  @include mixin.mediaQuery(var.$tablet) {
     @include mixin.spacing_section($left: 20px, $right: 10px);
   }
 }
@@ -38,10 +38,10 @@
 .pd-product-inear {
   @include mixin.spacing_section($left: 93px, $right: 25px);
 
-  @include mixin.mediaQuery(var.$large) {
+  @include mixin.mediaQuery(var.$desktop) {
     @include mixin.spacing_section($left: 50px, $right: 50px);
   }
-  @include mixin.mediaQuery(var.$medium) {
+  @include mixin.mediaQuery(var.$tablet) {
     @include mixin.spacing_section($left: 20px, $right: 10px);
   }
 }
@@ -49,10 +49,10 @@
 .pd-content-product-speaker {
   @include mixin.spacing_section($top: 225px, $bottom: 230px);
 
-  @include mixin.mediaQuery(var.$medium) {
+  @include mixin.mediaQuery(var.$tablet) {
     @include mixin.spacing_section($top: 160px, $bottom: 90px);
   }
-  @include mixin.mediaQuery(var.$small) {
+  @include mixin.mediaQuery(var.$mobile) {
     @include mixin.spacing_section($top: 0, $bottom: 91px);
   }
 }
@@ -60,10 +60,10 @@
 .pd-content-product-beats {
   @include mixin.spacing_section($left: 35px, $top: 235px, $bottom: 245px);
 
-  @include mixin.mediaQuery(var.$medium) {
+  @include mixin.mediaQuery(var.$tablet) {
     @include mixin.spacing_section($top: 120px, $bottom: 70px);
   }
-  @include mixin.mediaQuery(var.$small) {
+  @include mixin.mediaQuery(var.$mobile) {
     @include mixin.spacing_section($top: 0, $bottom: 35px, $left: 0);
   }
 }
@@ -71,10 +71,10 @@
 .pd-content-product-inear {
   @include mixin.spacing_section($top: 206px, $bottom: 294px);
 
-  @include mixin.mediaQuery(var.$medium) {
+  @include mixin.mediaQuery(var.$tablet) {
     @include mixin.spacing_section($top: 100px, $bottom: 110px);
   }
-  @include mixin.mediaQuery(var.$small) {
+  @include mixin.mediaQuery(var.$mobile) {
     @include mixin.spacing_section($top: 40px, $bottom: 55px);
   }
 }
@@ -82,10 +82,10 @@
 .pd-img-product-speaker {
   @include mixin.spacing_section($top: 47px);
 
-  @include mixin.mediaQuery(var.$medium) {
+  @include mixin.mediaQuery(var.$tablet) {
     @include mixin.img($width: 57vw)
   }
-  @include mixin.mediaQuery(var.$small) {
+  @include mixin.mediaQuery(var.$mobile) {
     @include mixin.img;
     @include mixin.spacing_section($top: 0);
   }
@@ -94,10 +94,10 @@
 .pd-img-product-beats {
   @include mixin.spacing_section($bottom: 28px);
 
-  @include mixin.mediaQuery(var.$medium) {
+  @include mixin.mediaQuery(var.$tablet) {
     @include mixin.img($width: 57vw)
   }
-  @include mixin.mediaQuery(var.$small) {
+  @include mixin.mediaQuery(var.$mobile) {
     @include mixin.img;
   }
 }
@@ -105,10 +105,10 @@
 .pd-img-product-inear {
   @include mixin.spacing_section($bottom: 29px);
 
-  @include mixin.mediaQuery(var.$medium) {
+  @include mixin.mediaQuery(var.$tablet) {
     @include mixin.img($width: 57vw);
   }
-  @include mixin.mediaQuery(var.$small) {
+  @include mixin.mediaQuery(var.$mobile) {
     @include mixin.img;
     @include mixin.spacing_section($top: 40px);
   }
@@ -116,7 +116,7 @@
 
 .pd-footer {
   @include mixin.spacing_section($left: 135px, $right: 93px);
-  @include mixin.mediaQuery(var.$large) {
+  @include mixin.mediaQuery(var.$desktop) {
     @include mixin.spacing_section($left: 5px, $right: 5px);
   }
   

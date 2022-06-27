@@ -21,7 +21,7 @@ body {
     letter-spacing: 1px;
     color: color.$white;
 
-    @include mixin.mediaQuery(var.$small) {
+    @include mixin.mediaQuery(var.$mobile) {
       color: color.$black;
     }
   }
@@ -56,7 +56,7 @@ body {
     line-height: 43px;
     color: color.$white;
 
-    @include mixin.mediaQuery(var.$small) {
+    @include mixin.mediaQuery(var.$mobile) {
       font-size: 32px;
       color: color.$black;
     }
@@ -65,7 +65,7 @@ body {
   &--card { 
     font-family: var.$font-500;
     
-    @include mixin.mediaQuery(var.$small) {
+    @include mixin.mediaQuery(var.$mobile) {
       font-size: 40px;
     }
   }
@@ -74,13 +74,13 @@ body {
     text-transform: uppercase; 
   }
 
-  @include mixin.mediaQuery(var.$large) {
+  @include mixin.mediaQuery(var.$desktop) {
     font-size: 40px;
   }
-  @include mixin.mediaQuery(var.$medium) {
+  @include mixin.mediaQuery(var.$tablet) {
     font-size: 35px;
   }
-  @include mixin.mediaQuery(var.$small) {
+  @include mixin.mediaQuery(var.$mobile) {
     font-size: 32px;
   }
 }
@@ -104,7 +104,7 @@ body {
     color: color.$porcelain; 
   }
   
-  @include mixin.mediaQuery(var.$small) {
+  @include mixin.mediaQuery(var.$mobile) {
     color: color.$black;
   }
 }
@@ -117,7 +117,7 @@ body {
   &--warning {
     color: color.$supernova; 
 
-    @include mixin.mediaQuery(var.$small) {
+    @include mixin.mediaQuery(var.$mobile) {
       color: color.$black;
     }
   }

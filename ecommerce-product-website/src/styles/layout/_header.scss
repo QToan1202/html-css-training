@@ -16,11 +16,11 @@
     max-width: var.$max-width;
     background-color: color.$mirage;
 
-    @include mixin.mediaQuery(var.$large) {
+    @include mixin.mediaQuery(var.$desktop) {
       @include mixin.spacing_section($left: 20px, $right: 20px, $top: 10px, $bottom: 10px);
     }
 
-    @include mixin.mediaQuery(var.$medium) {
+    @include mixin.mediaQuery(var.$tablet) {
       background-color: transparent;
     }
   }

@@ -16,10 +16,10 @@
   &--flex {
     display: flex;
 
-    @include mixin.mediaQuery(var.$large) {
+    @include mixin.mediaQuery(var.$desktop) {
       justify-content: center;
     }
-    @include mixin.mediaQuery(var.$small) {
+    @include mixin.mediaQuery(var.$mobile) {
       flex-direction: column;
     }
   }
@@ -30,17 +30,17 @@
     margin: 0px 44px;
     list-style-type: none;
     
-    @include mixin.mediaQuery(var.$medium) {
+    @include mixin.mediaQuery(var.$tablet) {
       margin: 0px 0px;
     }
-    @include mixin.mediaQuery(var.$small) {
+    @include mixin.mediaQuery(var.$mobile) {
       margin: 0;
       padding: 25px 13px;
       border-bottom: 1px solid color.$black;
     }
     
     &--decorate {
-      @include mixin.mediaQuery(var.$small) {
+      @include mixin.mediaQuery(var.$mobile) {
         border-bottom: none;
       }
     }
@@ -50,7 +50,7 @@
   &__logo {
     padding-bottom: 80px;
 
-    @include mixin.mediaQuery(var.$small) {
+    @include mixin.mediaQuery(var.$mobile) {
       @include mixin.spacing_section($top: 30px, $bottom: 25px);
       max-width: 50px;
       align-self: center;
@@ -88,13 +88,13 @@
       text-decoration: none;
       text-transform: uppercase;
 
-      @include mixin.mediaQuery(var.$small) {
+      @include mixin.mediaQuery(var.$mobile) {
         display: none;
       }
     }
 
     &--state {
-      @include mixin.mediaQuery(var.$small) {
+      @include mixin.mediaQuery(var.$mobile) {
         display: block;
       }
     }
