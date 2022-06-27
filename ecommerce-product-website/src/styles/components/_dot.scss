@@ -9,7 +9,7 @@
   display: inline-block;
   border: 1px solid color.$green-white;
   box-sizing: border-box;
-  box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 2px 1px 1px color.$dot-shadow;
   position: relative;
 
   &--light { 
